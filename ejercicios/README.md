@@ -1,6 +1,6 @@
 # Ejercicios y simulaciones
 
-Diagnóstico inicial pendiente. No hay ejercicios contestados ni resultados registrados todavía.
+Diagnóstico inicial completado. Consulta las [respuestas y explicaciones](DIAGNOSTICO_INICIAL_RESULTADOS.md): 28/30, tiempo de respuesta 21:57. Los enunciados completos del primer diagnóstico están en la conversación; el informe conserva temas, respuestas, confianza y correcciones.
 
 ## Organización
 

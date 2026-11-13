@@ -6,7 +6,7 @@ Preparación para el **EGEL Plus ISOFT**, con examen previsto para el **11 de di
 
 1. Consulta el [plan de estudio diario](PLAN_ESTUDIO_EGEL_PLUS_ISOFT_2026.md).
 2. Revisa el [estado y siguiente paso](seguimiento/AVANCE.md).
-3. Resuelve el diagnóstico inicial y registra resultados reales.
+3. Consulta los [resultados del diagnóstico](ejercicios/DIAGNOSTICO_INICIAL_RESULTADOS.md) y realiza el refuerzo pendiente.
 4. Al terminar cada sesión, actualiza avances, errores y repasos pendientes.
 
 ## Contenido
@@ -21,6 +21,6 @@ Preparación para el **EGEL Plus ISOFT**, con examen previsto para el **11 de di
 | [Apuntes](apuntes/README.md) | Explicaciones y resúmenes organizados por área. |
 | [Ejercicios](ejercicios/README.md) | Práctica original y simulaciones parciales. |
 
-**Situación inicial:** plan preparado; diagnóstico pendiente. No hay sesiones de estudio ni calificaciones registradas todavía.
+**Estado:** diagnóstico inicial completado: 28/30 en 21:57 de respuesta. Refuerzo pendiente de acentuación y cálculo de riesgos; verificar valores límite tras aclaración de posible confusión al responder. Estos resultados no equivalen a la calificación Ceneval.
 
 Base de preparación: guía Ceneval EGEL Plus ISOFT, septiembre de 2025. Este repositorio contiene material personal de estudio; los ejercicios propios no son reactivos oficiales. El repositorio es público: cualquier contenido publicado aquí será visible.

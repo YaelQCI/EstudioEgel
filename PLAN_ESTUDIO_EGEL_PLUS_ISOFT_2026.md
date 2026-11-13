@@ -5,7 +5,13 @@
 **Base:** Guía para el sustentante EGEL Plus ISOFT, septiembre de 2025.  
 **Disponibilidad:** máximo 2 horas por día; sábado con mayor disponibilidad. Se proponen 3 horas los sábados, ajustables porque todavía no se ha confirmado su duración.
 
-## Cómo empezamos hoy — 11 de noviembre
+## Ajuste tras el diagnóstico — 12 de noviembre
+
+Diagnóstico en chat completado: **28/30** en **21:57** de respuesta, con 4 dudas y 4 respuestas por adivinación. Es una muestra inicial, no una predicción del examen. [Resultados completos](ejercicios/DIAGNOSTICO_INICIAL_RESULTADOS.md).
+
+Próxima sesión de 120 minutos: 15 de recuperación, 25 de acentuación, 20 de valores límite, 15 de valor monetario esperado, 30 de ejercicios nuevos y 15 de corrección. Sustituye la siguiente sesión prevista; los temas desplazados de requerimientos se incorporan al sábado 14 y al repaso del 15 dentro de la carga disponible. No están completados todavía. Priorizar acentuación por dificultad declarada, aunque el único reactivo se acertó por adivinación. Valores límite: el usuario declara conocerlo y posible confusión al escribir la respuesta 15; usar el bloque para verificar, no asumir desconocimiento. Mantener el resto del calendario y adaptar posteriores refuerzos con evidencia.
+
+## Propuesta inicial de diagnóstico — sustituida por el diagnóstico en chat
 
 - [ ] Abre la [guía interactiva oficial de ISOFT](https://guias-egel.ceneval.edu.mx/) y selecciona Ingeniería de Software (EGEL+D-ISOFT).
 - [ ] Regístrate si es necesario. Dedica hasta 15 minutos a preparar el acceso.

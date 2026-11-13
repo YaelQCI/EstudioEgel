@@ -1,30 +1,32 @@
 # Avance y siguiente sesión
 
-Actualizado: 11 de noviembre de 2026.
+Actualizado: 12 de noviembre de 2026 (fecha de la sesión en America/Mexico_City).
 
 ## Siguiente paso
 
-Realizar el diagnóstico inicial descrito en el [plan](../PLAN_ESTUDIO_EGEL_PLUS_ISOFT_2026.md), cubriendo las seis áreas. Si no alcanza el tiempo, continuar en la siguiente sesión. No consultar respuestas antes de contestar.
+Sesión de refuerzo de hasta 120 minutos: 15 min de recuperación, 25 de acentuación, 20 de valores límite, 15 de valor monetario esperado, 30 de ejercicios nuevos y 15 de corrección y registro. La acentuación se prioriza por la dificultad declarada y un acierto por adivinación; falta medirla con más preguntas.
 
-## Estado por área
+## Diagnóstico inicial
 
-| Área | Estado | Aciertos / total | Dificultades | Próximo paso |
-|---|---|---|---|---|
-| Análisis | Sin diagnóstico | — | Por determinar | Diagnóstico |
-| Diseño | Sin diagnóstico | — | Por determinar | Diagnóstico |
-| Desarrollo | Sin diagnóstico | — | Por determinar | Diagnóstico |
-| Gestión | Sin diagnóstico | — | Por determinar | Diagnóstico |
-| Comprensión lectora | Sin diagnóstico | — | Por determinar | Diagnóstico |
-| Redacción indirecta | Sin diagnóstico | — | Por determinar | Diagnóstico |
+[Resultados y corrección completa](../ejercicios/DIAGNOSTICO_INICIAL_RESULTADOS.md): **28/30**, en **21:57** de respuesta informados por el usuario. No equivale a calificación Ceneval; muestra breve de dificultad inicial.
+
+| Área | Aciertos | Pendientes detectados |
+|---|---|---|
+| Análisis | 5/5 | Ampliar dificultad y cobertura |
+| Diseño | 5/5 | Cohesión (duda), Strategy (adivinación) |
+| Desarrollo | 4/5 | Valores límite (posible confusión al escribir según usuario; validar), atomicidad (duda) |
+| Gestión | 4/5 | Valor monetario esperado (error), métricas (adivinación) |
+| Comprensión lectora | 5/5 | Idea central (duda); textos más complejos |
+| Redacción indirecta | 5/5 | Concordancia (duda), acentuación (adivinación y debilidad declarada) |
 
 ## Preparación completada
 
-- [x] Identificar la guía y estructura del EGEL Plus ISOFT.
-- [x] Definir fecha y disponibilidad habitual de hasta 2 horas diarias.
-- [x] Crear plan diario y organizar recursos.
-- [ ] Confirmar duración disponible los sábados; 3 horas es una propuesta.
-- [ ] Completar diagnóstico de las seis áreas.
-- [ ] Identificar tres dificultades prioritarias.
-- [ ] Completar primera sesión de contenido.
+- [x] Identificar guía y estructura del EGEL Plus ISOFT.
+- [x] Definir fecha y máximo habitual de 2 horas.
+- [x] Crear plan y organizar recursos.
+- [x] Completar diagnóstico de seis áreas.
+- [x] Identificar prioridades iniciales.
+- [ ] Confirmar horas de sábado; 3 horas sigue siendo propuesta.
+- [ ] Completar refuerzo y comprobar aprendizaje con casos nuevos.
 
-Los porcentajes de práctica no equivalen a la escala Ceneval. Actualizar este archivo sólo con evidencia de sesiones o resultados reales.
+No se han completado aún las sesiones de contenido del calendario. Leer una explicación o acertar por adivinación no demuestra dominio.
