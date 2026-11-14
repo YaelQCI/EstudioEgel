@@ -17,8 +17,10 @@ Tiempo por bloque: 8:00, 7:53 y 6:04. Revisión y pausas no medidas. [Respuestas
 | 2026-11-13 | 2 — Obtención, análisis, priorización y validación | 14:02 | 10/10 | 6 / 3 / 1 |
 | 2026-11-13 | 3 — Documentación de requerimientos | 7:56 | 9/10 | 4 / 2 / 4 |
 | 2026-11-13 | 4 — Diseño arquitectónico | 7:05 | 10/10 | 7 / 2 / 1 |
+| 2026-11-13 | 5 — Diseño de módulos, componentes y datos | 10:10 | 10/10 | 3 / 3 / 4 |
+| 2026-11-13 | 6 — Diseño de interfaces | 5:09 | 10/10 | 9 / 1 / 0 |
 
-**Acumulado:** 39/40 en 33:26. En el bloque 2 corrigió un error de cálculo manual en la matriz ponderada. En el bloque 3 reportó relecturas por falta de atención. En el bloque 4 declaró desconocer ATAM y MoSCoW. [Registro detallado](../ejercicios/EGEL_ISOFT_diagnostico_integral_registro.md). Mantener separados estos 40 reactivos del diagnóstico inicial de 30.
+**Acumulado:** 59/60 en 48:45. **Área 2 cerrada:** 30/30 en 22:24, con 19 seguras, 6 dudas y 5 adivinadas. En el bloque 2 corrigió un error de cálculo manual en la matriz ponderada; en el bloque 3 reportó relecturas por falta de atención; en el bloque 4 declaró desconocer ATAM y MoSCoW. Bloque 5: cuatro aciertos por adivinanza (UML de componentes, documentos incrustados, fragmentación y concurrencia). Bloque 6: nueve seguras y una duda en pruebas de usabilidad. [Registro detallado](../ejercicios/EGEL_ISOFT_diagnostico_integral_registro.md). Mantener separados estos 60 reactivos del diagnóstico inicial de 30.
 
 ## Plantilla de sesión
 
