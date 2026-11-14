@@ -1,10 +1,10 @@
 # Avance y siguiente sesión
 
-Actualizado: 13 de noviembre de 2026 (fecha de la sesión en America/Mexico_City).
+Actualizado: 14 de noviembre de 2026.
 
-## Diagnóstico integral en curso (13 de noviembre de 2026)
+## Diagnóstico integral en curso (13–14 de noviembre de 2026)
 
-[Registro detallado de los bloques 1–6](../ejercicios/EGEL_ISOFT_diagnostico_integral_registro.md): **59/60 aciertos**, **48:45** de tiempo acumulado, **6/19 bloques**. Este diagnóstico ampliado (10 reactivos por cada una de las 19 subáreas) es independiente del diagnóstico inicial de 30 reactivos.
+[Registro detallado de los bloques 1–11](../ejercicios/EGEL_ISOFT_diagnostico_integral_registro.md): **100/110 aciertos**, **91:17** de tiempo acumulado, **11/19 bloques**. Este diagnóstico ampliado (10 reactivos por cada una de las 19 subáreas) es independiente del diagnóstico inicial de 30 reactivos.
 
 | Bloque | Subárea | Aciertos | Tiempo |
 |---|---|---:|---:|
@@ -14,10 +14,17 @@ Actualizado: 13 de noviembre de 2026 (fecha de la sesión en America/Mexico_City
 | 4 | 2.1 Diseño arquitectónico de software | 10/10 | 7:05 |
 | 5 | 2.2 Diseño de módulos, componentes y datos | 10/10 | 10:10 |
 | 6 | 2.3 Diseño de interfaces | 10/10 | 5:09 |
+| 7 | 3.1 Lenguajes de desarrollo de software | 6/10 | 9:51 |
+| 8 | 3.2 Paradigmas de programación | 8/10 | 9:37 |
+| 9 | 3.3 Entornos de desarrollo | 10/10 | 6:03 |
+| 10 | 3.4 Gestión de datos | 8/10 | 10:37 |
+| 11 | 3.5 Plataformas de desarrollo | 9/10 | 6:24 |
 
-**Balance del Área 2:** **30/30** en **22:24**, con 19 respuestas seguras, 6 con duda y 5 adivinando. Fortaleza observada en diseño de interfaces (10/10, 9 seguras). **Por verificar:** UML y selección de diagramas, MoSCoW, ATAM (desconocimiento declarado), bases documentales y distribuidas, fragmentación, concurrencia, CQRS, arquitectura en capas, cohesión y Strategy. En el bloque 2 detectó y corrigió un error de cálculo de ponderaciones; en el bloque 3 reportó dificultades de atención y relectura. Un acierto adivinado no acredita dominio.
+**Áreas terminadas:** Área 1: 29/30; Área 2: 30/30; Área 3: **41/50 (82 %) en 42:32**. En Área 3 hubo 20 respuestas seguras, 14 con duda y 16 adivinadas; no considerar dominados los aciertos por adivinanza.
 
-**Próximo bloque:** 7/19, subárea 3.1 Lenguajes de desarrollo de software. El diagnóstico ampliado continúa; las sesiones de refuerzo del plan inicial permanecen pendientes.
+**Prioridad crítica explícita:** bloque 10, reactivo 7: `NOT IN` con `NULL`, lógica de tres valores SQL, comparar `NOT EXISTS` y resolver paso a paso. **Otras prioridades:** concurrencia SQL, paradigmas/polimorfismo/closures/`reduce`/Liskov/DIP, semántica Java/C#/JS, PWA/RTOS/OTA, push frente a WebSocket suspendido, depuración y trazas; conservar UML, ATAM, MoSCoW, CQRS, arquitectura en capas y bases distribuidas.
+
+**Próximo bloque:** 12/19, subárea 4.1 Gestión de tiempos, costos, recursos humanos y riesgo. El diagnóstico ampliado continúa; las sesiones de refuerzo del plan inicial permanecen pendientes.
 
 ## Siguiente paso
 
