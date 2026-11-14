@@ -1,6 +1,21 @@
 # Avance y siguiente sesión
 
-Actualizado: 12 de noviembre de 2026 (fecha de la sesión en America/Mexico_City).
+Actualizado: 13 de noviembre de 2026 (fecha de la sesión en America/Mexico_City).
+
+## Diagnóstico integral en curso (13 de noviembre de 2026)
+
+[Registro detallado de los bloques 1–4](../ejercicios/EGEL_ISOFT_diagnostico_integral_registro.md): **39/40 aciertos**, **33:26** de tiempo acumulado, **4/19 bloques**. Este diagnóstico ampliado (10 reactivos por cada una de las 19 subáreas) es independiente del diagnóstico inicial de 30 reactivos.
+
+| Bloque | Subárea | Aciertos | Tiempo |
+|---|---|---:|---:|
+| 1 | 1.1 Tipos de requerimientos | 10/10 | 4:23 |
+| 2 | 1.2 Obtención, análisis, priorización y validación | 10/10 | 14:02 |
+| 3 | 1.3 Documentación de requerimientos | 9/10 | 7:56 |
+| 4 | 2.1 Diseño arquitectónico de software | 10/10 | 7:05 |
+
+**Temas pendientes de verificación:** UML y selección de diagramas (error en caso de uso y aciertos por adivinanza), MoSCoW, ATAM (desconocimiento declarado), documentación de requisitos, CQRS y arquitectura en capas. En el bloque 2 detectó y corrigió por sí mismo un error al calcular una matriz ponderada. En el bloque 3 reportó dificultades de atención y relectura. Un acierto adivinado no acredita dominio.
+
+**Próximo bloque:** 5/19, subárea 2.2 Diseño de módulos, componentes y de datos de software.
 
 ## Siguiente paso
 
