@@ -9,12 +9,12 @@
 
 | Indicador | Resultado |
 |---|---:|
-| Bloques finalizados | 4 de 19 |
-| Reactivos respondidos | 40 de 190 |
-| Aciertos acumulados | 39 |
+| Bloques finalizados | 6 de 19 |
+| Reactivos respondidos | 60 de 190 |
+| Aciertos acumulados | 59 |
 | Errores acumulados | 1 |
-| Porcentaje acumulado (provisional) | 97.5 % |
-| Tiempo acumulado | 33 min 26 s |
+| Porcentaje acumulado (provisional) | 98.33 % |
+| Tiempo acumulado | 48 min 45 s |
 
 ## Bloque 1 — Sección disciplinar / Área 1: Análisis de Sistemas de Software / Subárea 1.1: Tipos de requerimientos
 
@@ -235,4 +235,173 @@ Bloque 5/19: **2.2 Diseño de módulos, componentes y de datos de software**, co
 
 ---
 
-*Registro acumulativo de práctica diagnóstica — actualización tras el bloque 4, con respuestas, seguridad, tiempos y observaciones.*
+## Bloque 5 — Sección disciplinar / Área 2: Diseño de Sistemas de Software / Subárea 2.2: Diseño de módulos, componentes y de datos de software
+
+**Fecha:** 13-11-2026  
+**Reactivos:** 10  
+**Aciertos:** 10/10 (100 %)  
+**Tiempo registrado:** 10 min 10 s (610 s)  
+**Tiempo medio:** 61.0 s por pregunta  
+**Seguridad:** 3 «Seguro» (3 correctas), 3 «Duda» (3 correctas), 4 «Adivinando» (4 correctas).
+
+| Reactivo | Respuesta del sustentante | Seguridad | Respuesta correcta | Resultado | Concepto predominante |
+|---:|:---:|---|:---:|---|---|
+| 1 | B | Duda | B | Correcta | Cohesión, separación de responsabilidades y acoplamiento |
+| 2 | A | Seguro | A | Correcta | Inversión de dependencias e inyección de dependencias |
+| 3 | C | Adivinando | C | Correcta | Diagrama UML de componentes e interfaces proporcionadas/requeridas |
+| 4 | B | Duda | B | Correcta | Multiplicidades: Cliente–Pedido 1:0..*, Pedido–Partida 1:1..*, Partida–Producto *:1 |
+| 5 | A | Seguro | A | Correcta | Normalización: entidad Cliente separada y clave foránea en Factura |
+| 6 | C | Duda | C | Correcta | Patrón Strategy: algoritmos intercambiables bajo un contrato |
+| 7 | B | Adivinando | B | Correcta | Modelado documental: incrustación de partidas acotadas y actualización atómica |
+| 8 | A | Adivinando | A | Correcta | Fragmentación horizontal por país con residencia de datos |
+| 9 | C | Seguro | C | Correcta | Versionamiento de interfaces y adaptación retrocompatible |
+| 10 | B | Adivinando | B | Correcta | Control transaccional de préstamo concurrente; lectura asíncrona eventualmente consistente |
+
+### Explicación y seguimiento por pregunta
+
+1. **B, Duda:** dividir responsabilidades en módulos cohesivos con interfaces claras evita que cambios de reportes afecten lógica de precios. Confirmar distinción cohesión/acoplamiento y principio de responsabilidad única.
+2. **A, Seguro:** depender de una abstracción de persistencia e inyectar implementaciones desacopla reglas de negocio de SQL Server y facilita pruebas con dobles.
+3. **C, Adivinando:** el diagrama UML de componentes representa componentes, dependencias e interfaces proporcionadas y requeridas. **No consolidado**; enlaza con dificultad previa al elegir diagramas UML.
+4. **B, Duda:** un cliente tiene cero o más pedidos; cada pedido una o más partidas; cada partida corresponde a un producto y un producto puede figurar en múltiples partidas. Reforzar lectura de multiplicidades en ambos extremos.
+5. **A, Seguro:** separar Cliente(idCliente, nombreCliente) elimina repetición y anomalías de actualización al mantener Factura(idFactura, idCliente, fecha) con clave foránea. Concepto de dependencia transitiva y normalización.
+6. **C, Duda:** encapsular algoritmos de transportistas bajo un contrato común favorece sustitución/extensión sin condicionales repetidos; se vincula con patrón Strategy y principio abierto/cerrado. Reforzar frente a patrones similares.
+7. **B, Adivinando:** incrustar partidas pequeñas, no compartidas y generalmente leídas junto con el pedido facilita consultas agregadas y operaciones atómicas a nivel de documento, según soporte del motor. **No consolidado**.
+8. **A, Adivinando:** fragmentar horizontalmente clientes por país permite mantener cada subconjunto en su región y consultar principalmente datos locales. La vertical separa columnas; replicar globalmente violaría la restricción dada. **No consolidado**.
+9. **C, Seguro:** versionar el contrato API y mantener adaptadores de compatibilidad permite migraciones graduales sin romper a consumidores no actualizables inmediatamente.
+10. **B, Adivinando:** realizar la comprobación y creación del préstamo de forma atómica/autoritativa evita dos préstamos activos; debe reforzarse con una restricción de unicidad o mecanismo de concurrencia apropiado. El catálogo tolera replicación asíncrona. **No consolidado**; se relaciona con CQRS y consistencia.
+
+### Interpretación diagnóstica
+
+- **Precisión bruta:** 10/10; **solo 3 respuestas marcadas «Seguro»**. No equiparar el 100 % de aciertos con dominio integral.
+- **Dudas correctas (3):** cohesión/encapsulación de responsabilidades (1), cardinalidades UML/ER (4), patrón Strategy (6). Verificar con reactivos sin pistas obvias.
+- **Adivinanzas correctas (4):** UML de componentes (3), embedding en bases documentales (7), fragmentación horizontal (8), transacciones concurrentes con lectura eventual (10). Son **prioridades de práctica** y no conocimiento demostrado.
+- **Fortalezas observadas con seguridad:** inversión e inyección de dependencias (2), normalización relacional (5) y evolución de contratos API (9).
+- **Dificultad nominal de práctica:** fundamentales 2/2, intermedias 4/4 y avanzadas 4/4; las etiquetas no provienen de una escala oficial Ceneval.
+- **Tiempo:** 610 s / 10 = 61 s por reactivo, mayor que el bloque 4 (42.5 s), sin tiempos por pregunta; no se puede atribuir a una dificultad particular.
+- **Tipo de error:** no hubo respuestas incorrectas ni evidencia específica de errores de cálculo, lectura o descuido en este bloque; la baja confianza sugiere lagunas posibles que requieren comprobación, no un diagnóstico causal.
+- **Observaciones del sustentante:** no indicó observaciones adicionales para este bloque.
+
+### Estado acumulado tras el bloque 5
+
+| Indicador | Resultado |
+|---|---:|
+| Bloques finalizados | 5/19 |
+| Reactivos contestados | 50/190 (26.3 % del plan) |
+| Aciertos / errores | 49 / 1 |
+| Porcentaje de aciertos | 98.0 % (provisional) |
+| Tiempo total | 43 min 36 s (2616 s) |
+| Tiempo promedio combinado | 52.32 s por reactivo |
+| Respuestas marcadas «Seguro» | 29/29 correctas |
+| Respuestas marcadas «Duda» | 11/11 correctas |
+| Respuestas marcadas «Adivinando» | 9/10 correctas; 1/10 incorrecta |
+
+### Prioridades acumuladas para repasos
+
+1. **Alta: UML y selección de artefactos:** casos de uso, include/extend, diagramas de actividad, secuencia y componentes; multiplicidades (bloque 5, pregunta 4, duda).
+2. **Alta: ATAM y MoSCoW:** desconocimiento declarado por el sustentante en bloque 4; aciertos por adivinanza en bloques previos.
+3. **Alta: diseño de datos no relacionales/distribuidos:** embedding vs. referencia en documentos; fragmentación horizontal/vertical; consistencia de operaciones concurrentes y vistas de lectura (bloque 5, preguntas 7, 8, 10 adivinadas).
+4. **Media: estilos y principios:** arquitectura en capas, CQRS, responsabilidad única/cohesión y acoplamiento, Strategy y patrones de diseño; dudas de bloques 4 y 5.
+5. **Media: ingeniería de requerimientos:** especificación, criterios de aceptación, control de cambios y fases de análisis/priorización/validación.
+6. **Seguimiento:** precisión manual en matrices ponderadas, con autocorrección demostrada; lectura atenta del enunciado en bloque 3, sin generalizar a todos los bloques.
+
+### Siguiente paso registrado tras el bloque 5
+
+En ese momento estaba pendiente el bloque 6/19 (**2.3 Diseño de interfaces**) y se había acordado sincronizar los resultados al finalizar el Área 2. La sincronización se realizó tras finalizar el bloque 6.
+
+---
+
+---
+
+## Bloque 6 — Sección disciplinar / Área 2: Diseño de Sistemas de Software / Subárea 2.3: Diseño de interfaces
+
+**Fecha:** 13-11-2026  
+**Reactivos:** 10  
+**Aciertos:** 10/10 (100 %)  
+**Tiempo registrado:** 5 min 09 s (309 s)  
+**Tiempo medio:** 30.9 s por pregunta  
+**Seguridad:** 9 «Seguro» (9 correctas), 1 «Duda» (1 correcta), 0 «Adivinando».  
+**Observaciones del sustentante:** no agregó observaciones adicionales en la entrega.
+
+| Reactivo | Respuesta del sustentante | Seguridad | Respuesta correcta | Resultado | Concepto predominante |
+|---:|:---:|---|:---:|---|---|
+| 1 | B | Seguro | B | Correcta | Wireframes de baja fidelidad para explorar estructura y navegación |
+| 2 | A | Seguro | A | Correcta | Visibilidad del estado de procesamiento y prevención de envíos repetidos |
+| 3 | C | Seguro | C | Correcta | Consistencia terminológica en interfaces |
+| 4 | B | Seguro | B | Correcta | Divulgación progresiva y formularios por pasos/contexto |
+| 5 | A | Seguro | A | Correcta | Accesibilidad por teclado; gestión y restauración del foco en diálogos |
+| 6 | C | Seguro | C | Correcta | Prevención de errores en eliminación irreversible |
+| 7 | B | Duda | B | Correcta | Pruebas de usabilidad con tareas observadas y problemas de interacción |
+| 8 | A | Seguro | A | Correcta | Diseño adaptable y redistribución del contenido ante zoom |
+| 9 | C | Seguro | C | Correcta | Evaluación comparativa de tareas, éxito y errores con orden equilibrado |
+| 10 | B | Seguro | B | Correcta | Interfaz para estados inciertos de pago, verificación y reintentos seguros |
+
+### Explicación y seguimiento por pregunta
+
+1. **B, Seguro:** wireframes de baja fidelidad permiten probar distribución y navegación con modificaciones económicas; alta fidelidad sería prematura y diagramas de componentes documentan lo técnico, no el recorrido de usuario.
+2. **A, Seguro:** mostrar estado de procesamiento y controlar reenvíos resuelve el desconocimiento del usuario durante una solicitud lenta; confirmar únicamente al terminar no aborda la espera.
+3. **C, Seguro:** mantener una misma terminología para la misma entidad reduce confusión y la carga de aprendizaje; un tooltip no corrige la inconsistencia principal.
+4. **B, Seguro:** formularios escalonados con revelación contextual aplican divulgación progresiva para reducir complejidad sin omitir información necesaria.
+5. **A, Seguro:** el foco del teclado debe entrar al diálogo modal y, al cerrarse, volver normalmente al control que lo activó; anunciar solo visualmente no resuelve navegación por teclado.
+6. **C, Seguro:** ante destrucción permanente sin mecanismo de reversión, confirmación explicita de alcance e irreversibilidad permite evitar errores antes de ejecutarlos.
+7. **B, Duda:** las pruebas de usabilidad observan a usuarios representativos ejecutar tareas reales para detectar causas de fallos; encuestas y revisiones visuales no proporcionan la misma evidencia conductual. **Verificar con un caso nuevo** diferencias entre prueba de usabilidad, evaluación heurística y encuesta.
+8. **A, Seguro:** la interfaz debe redistribuir el contenido al ampliar el zoom para conservar controles operables sin desplazamiento horizontal innecesario.
+9. **C, Seguro:** comparar tareas equivalentes, contrabalancear el orden y medir éxito y errores produce evidencia más sólida que preferencias subjetivas o simples clics de demostración.
+10. **B, Seguro:** si no se conoce el resultado definitivo de una transferencia, debe mostrarse «pendiente», consultar estado antes de otro intento y probar situaciones inciertas; afirmar aprobación o rechazo es potencialmente incorrecto.
+
+### Interpretación diagnóstica de la subárea 2.3
+
+- **Precisión:** 10/10 aciertos (100 % bruto), nueve respuestas seguras y una correcta con duda; ninguna por adivinanza.
+- **Fortalezas observadas:** wireframes, visibilidad del estado, consistencia, divulgación progresiva, accesibilidad por teclado, prevención de errores, diseño adaptable, evaluación comparativa y manejo de estados inciertos.
+- **Pendiente puntual:** técnicas de investigación/evaluación de usabilidad (reactivo 7, correcto pero con duda); comprobar aplicación en otro caso.
+- **Dificultad asignada internamente:** fundamental 2/2, intermedia 4/4, avanzada 4/4. No es escala psicométrica oficial Ceneval.
+- **Tiempo:** 309 s, 30.9 s por pregunta; más rápido que el bloque 5 (61 s por pregunta), pero ambos bloques tienen dificultades y contenidos distintos.
+- **Errores de interpretación o descuido:** ninguno observable; no se atribuyen causas no comunicadas. No hubo reactivos de cálculo numérico.
+- **Limitaciones:** diez preguntas originales no prueban dominio exhaustivo ni permiten predecir resultado oficial.
+
+## Balance del Área 2 — Diseño de Sistemas de Software (bloques 4, 5 y 6)
+
+| Subárea | Aciertos | Tiempo | Seguro | Duda | Adivinando |
+|---|---:|---:|---:|---:|---:|
+| 2.1 Diseño arquitectónico | 10/10 | 7:05 | 7 | 2 | 1 |
+| 2.2 Módulos, componentes y datos | 10/10 | 10:10 | 3 | 3 | 4 |
+| 2.3 Diseño de interfaces | 10/10 | 5:09 | 9 | 1 | 0 |
+| **Total Área 2** | **30/30** | **22:24** | **19** | **6** | **5** |
+
+**Interpretación:** 30/30 aciertos en el Área 2 del diagnóstico original, pero 5 se respondieron adivinando y 6 con duda. El porcentaje bruto no constituye acreditación formal del área.
+
+**Fortalezas mejor sustentadas:** selección práctica de monolito modular/microservicios, eventos, disponibilidad, idempotencia, inyección de dependencias, normalización y versionamiento de APIs; especialmente diseño de interfaces (9/10 seguras).
+
+**Refuerzo de alta prioridad:**
+- **UML:** especificaciones textuales de caso de uso (único error acumulado en bloque 3), diagramas de componentes/actividades/secuencia, relaciones include/extend y cardinalidades.
+- **ATAM:** desconocimiento declarado en bloque 4, pregunta 8 (acierto adivinado).
+- **MoSCoW:** desconocimiento declarado en bloque 4 y adivinanza en bloque 2, pregunta 6. Es técnica de priorización de requerimientos del Área 1, pero se mantiene en el plan transversal.
+- **Datos no relacionales y distribuidos:** documentos incrustados vs referenciados, fragmentación horizontal vs vertical, consistencia transaccional y concurrencia.
+- **CQRS y arquitectura en capas:** ambas respondidas correctamente pero con duda en bloque 4.
+
+**Refuerzo de prioridad media:** cohesión/acoplamiento y Strategy (dudas del bloque 5), control de cambios y líneas base de requerimientos, técnicas de evaluación de usabilidad (duda en bloque 6, pregunta 7).
+
+**Observaciones del historial:** en el bloque 2 el sustentante detectó y corrigió por sí mismo un error de cálculo de ponderaciones; en el bloque 3 informó relecturas por falta de atención. Esas observaciones no deben proyectarse como causas del bloque 6.
+
+## Estado acumulado tras el bloque 6
+
+| Indicador | Resultado |
+|---|---:|
+| Bloques terminados | 6/19 |
+| Reactivos contestados | 60/190 |
+| Aciertos y errores | 59 correctos, 1 incorrecto |
+| Porcentaje bruto | 98.33 % |
+| Tiempo acumulado | 48 min 45 s (2925 s) |
+| Tiempo medio acumulado | 48.75 s por reactivo |
+| Seguro | 38/38 correctas |
+| Duda | 12/12 correctas |
+| Adivinando | 9/10 correctas; 1/10 incorrecta |
+| Área 1 (bloques 1–3) | 29/30, 26:21 |
+| Área 2 (bloques 4–6) | 30/30, 22:24 |
+
+### Próximo paso
+
+Bloque 7/19: **Área 3. Desarrollo de Sistemas de Software — subárea 3.1 Lenguajes de desarrollo de software**. Presentar 10 reactivos de dificultad progresiva y conservar registro de seguridad, tiempo y observaciones. Las debilidades anteriores deben incorporarse posteriormente a sesiones de refuerzo y reevaluación, sin contar aciertos adivinados como dominio consolidado.
+
+---
+
+*Registro acumulativo de práctica diagnóstica, actualizado al completar el bloque 6. Contenido original de estudio; no oficial Ceneval.*
