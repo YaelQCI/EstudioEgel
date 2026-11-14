@@ -9,7 +9,7 @@ Primera sesión registrada: diagnóstico de las seis áreas.
 
 Tiempo por bloque: 8:00, 7:53 y 6:04. Revisión y pausas no medidas. [Respuestas y corrección](../ejercicios/DIAGNOSTICO_INICIAL_RESULTADOS.md). El usuario declara dificultad con los acentos.
 
-## Diagnóstico integral ampliado — 13 de noviembre de 2026
+## Diagnóstico integral ampliado — 13 y 14 de noviembre de 2026
 
 | Fecha | Bloque / subárea | Tiempo | Aciertos | Seguridad (seguro / duda / adivinando) |
 |---|---|---:|---:|---|
@@ -19,8 +19,13 @@ Tiempo por bloque: 8:00, 7:53 y 6:04. Revisión y pausas no medidas. [Respuestas
 | 2026-11-13 | 4 — Diseño arquitectónico | 7:05 | 10/10 | 7 / 2 / 1 |
 | 2026-11-13 | 5 — Diseño de módulos, componentes y datos | 10:10 | 10/10 | 3 / 3 / 4 |
 | 2026-11-13 | 6 — Diseño de interfaces | 5:09 | 10/10 | 9 / 1 / 0 |
+| 2026-11-14 | 7 — Lenguajes de desarrollo | 9:51 | 6/10 | 2 / 4 / 4 |
+| 2026-11-14 | 8 — Paradigmas de programación | 9:37 | 8/10 | 5 / 3 / 2 |
+| 2026-11-14 | 9 — Entornos de desarrollo | 6:03 | 10/10 | 6 / 2 / 2 |
+| 2026-11-14 | 10 — Gestión de datos | 10:37 | 8/10 | 3 / 3 / 4 |
+| 2026-11-14 | 11 — Plataformas de desarrollo | 6:24 | 9/10 | 4 / 2 / 4 |
 
-**Acumulado:** 59/60 en 48:45. **Área 2 cerrada:** 30/30 en 22:24, con 19 seguras, 6 dudas y 5 adivinadas. En el bloque 2 corrigió un error de cálculo manual en la matriz ponderada; en el bloque 3 reportó relecturas por falta de atención; en el bloque 4 declaró desconocer ATAM y MoSCoW. Bloque 5: cuatro aciertos por adivinanza (UML de componentes, documentos incrustados, fragmentación y concurrencia). Bloque 6: nueve seguras y una duda en pruebas de usabilidad. [Registro detallado](../ejercicios/EGEL_ISOFT_diagnostico_integral_registro.md). Mantener separados estos 60 reactivos del diagnóstico inicial de 30.
+**Acumulado integral al bloque 11:** 100/110 (90.91 %) en 91:17. **Área 3:** 41/50 en 42:32, 20 seguras, 14 dudas y 16 adivinadas. Error en bloque 11 pregunta 9: WebSocket frente a push con aplicación suspendida. El usuario declaró desconocer PWA, RTOS, OTA y no comprender pregunta 10, acertada por adivinanza. **Prioridad crítica expresa:** bloque 10 pregunta 7, `NOT IN` con `NULL` y lógica de tres valores; sesión de repaso detallada pendiente. Conserva las deficiencias de semántica de lenguajes, paradigmas y concurrencia, más UML, ATAM, MoSCoW, CQRS y sistemas distribuidos. [Registro detallado](../ejercicios/EGEL_ISOFT_diagnostico_integral_registro.md). Este diagnóstico de 110 reactivos es independiente del inicial de 30.
 
 ## Plantilla de sesión
 
