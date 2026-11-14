@@ -4,7 +4,7 @@ Diagnóstico inicial completado. Consulta las [respuestas y explicaciones](DIAGN
 
 ## Diagnóstico integral en curso
 
-[Registro de las 19 subáreas — bloques 1 a 4](EGEL_ISOFT_diagnostico_integral_registro.md): **39/40 aciertos**, 33:26 de tiempo acumulado. El siguiente bloque es el 5, sobre diseño de módulos, componentes y datos. Este registro es independiente del diagnóstico inicial de 30 reactivos.
+[Registro de las 19 subáreas — bloques 1 a 6](EGEL_ISOFT_diagnostico_integral_registro.md): **59/60 aciertos**, 48:45 de tiempo acumulado. Área 2 completada (30/30); el siguiente bloque es el 7, sobre lenguajes de desarrollo de software. Este registro es independiente del diagnóstico inicial de 30 reactivos.
 
 ## Organización
 
