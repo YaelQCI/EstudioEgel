@@ -2,6 +2,10 @@
 
 Diagnóstico inicial completado. Consulta las [respuestas y explicaciones](DIAGNOSTICO_INICIAL_RESULTADOS.md): 28/30, tiempo de respuesta 21:57. Los enunciados completos del primer diagnóstico están en la conversación; el informe conserva temas, respuestas, confianza y correcciones.
 
+## Diagnóstico integral en curso
+
+[Registro de las 19 subáreas — bloques 1 a 4](EGEL_ISOFT_diagnostico_integral_registro.md): **39/40 aciertos**, 33:26 de tiempo acumulado. El siguiente bloque es el 5, sobre diseño de módulos, componentes y datos. Este registro es independiente del diagnóstico inicial de 30 reactivos.
+
 ## Organización
 
 Crear archivos con fecha y tema, por ejemplo `2026-11-11-diagnostico-preguntas.md`, y un archivo separado para soluciones y explicaciones. Añadir las soluciones después de que se responda el bloque o mantenerlas separadas para evitar verlas durante el intento.
