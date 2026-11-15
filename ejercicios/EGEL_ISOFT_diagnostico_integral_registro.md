@@ -9,12 +9,12 @@
 
 | Indicador | Resultado |
 |---|---:|
-| Bloques finalizados | 11 de 19 |
-| Reactivos respondidos | 110 de 190 |
-| Aciertos acumulados | 100 |
-| Errores acumulados | 10 |
-| Porcentaje acumulado (provisional) | 90.91 % |
-| Tiempo acumulado | 91 min 17 s |
+| Bloques finalizados | 14 de 19 |
+| Reactivos respondidos | 140 de 190 |
+| Aciertos acumulados | 122 |
+| Errores acumulados | 18 |
+| Porcentaje acumulado (provisional) | 87.14 % |
+| Tiempo acumulado | 116 min 47 s |
 
 ## Bloque 1 — Sección disciplinar / Área 1: Análisis de Sistemas de Software / Subárea 1.1: Tipos de requerimientos
 
@@ -789,100 +789,341 @@ La dificultad de los reactivos fue asignada para esta práctica, no calibrada of
 7. Plantear 5–10 reactivos nuevos y revisar explicaciones *antes de* considerar el tema consolidado; exigir respuesta razonada sin adivinar.
 
 **Vinculación:** bloque 10 pregunta 5 (`<>` y NULL), gestión de datos, SQL, semántica de tres valores y seguridad de consultas. Mantener este pendiente en las prioridades y en la futura sincronización a GitHub al finalizar el bloque 11.
+
 ---
 
 ## Bloque 11 — Área 3: Desarrollo de Sistemas de Software / Subárea 3.5: Plataformas de desarrollo
 
 **Fecha:** 14-11-2026  
-**Reactivos:** 10 originales, no oficiales  
-**Aciertos:** 9/10 (90 %)  
-**Tiempo:** 6:24 (384 segundos), 38.4 segundos/reactivo  
-**Seguridad:** 4 «Seguro» (4 correctas), 2 «Duda» (2 correctas), 4 «Adivinando» (3 correctas, 1 incorrecta).  
+**Aciertos:** 9/10 (90 %); **tiempo:** 6:24; **promedio:** 38.4 s/reactivo.  
+**Confianza:** 4 seguras (4 correctas), 2 dudas (2 correctas), 4 adivinanzas (3 correctas, 1 incorrecta).  
 **Observaciones textuales:** «No se que es una PWA, no se que es un RTOS, no se que es OTA, no entendi nada de la pregunta 10».
 
-| Pregunta | Selección | Seguridad | Correcta | Resultado | Tema |
+| Pregunta | Respuesta | Seguridad | Clave | Resultado | Concepto |
 |---:|:---:|---|:---:|---|---|
-| 1 | B | Seguro | B | Correcta | Aplicación web adaptable |
-| 2 | C | Adivinando | C | Correcta | PWA y persistencia/sincronización offline |
-| 3 | A | Seguro | A | Correcta | Capacidades nativas y segundo plano móvil |
-| 4 | C | Duda | C | Correcta | Aplicación Windows y SDK nativo USB |
-| 5 | B | Duda | B | Correcta | Puente/módulo nativo de framework multiplataforma |
-| 6 | A | Seguro | A | Correcta | Recompilación compatible Linux ARM64 |
-| 7 | C | Seguro | C | Correcta | Rotar secretos expuestos y trasladarlos al backend |
-| 8 | B | Adivinando | B | Correcta | RTOS y plazos temporales en embebidos |
-| 9 | B | Adivinando | A | **Incorrecta** | Push del sistema vs WebSocket suspendido |
-| 10 | B | Adivinando | B | Correcta | OTA, firmware firmado, particiones A/B y reversión |
+| 1 | B | Seguro | B | Correcta | Catálogo web adaptable |
+| 2 | C | Adivinando | C | Correcta | PWA offline y sincronización |
+| 3 | A | Seguro | A | Correcta | Bluetooth y ejecución nativa en segundo plano |
+| 4 | C | Duda | C | Correcta | SDK USB nativo de Windows |
+| 5 | B | Duda | B | Correcta | Puente nativo en framework multiplataforma |
+| 6 | A | Seguro | A | Correcta | Recompilar para Linux ARM64 y comprobar ABI |
+| 7 | C | Seguro | C | Correcta | Rotación de secretos y backend |
+| 8 | B | Adivinando | B | Correcta | RTOS y plazos críticos |
+| 9 | B | Adivinando | A | **Incorrecta** | Push del SO vs WebSocket suspendido |
+| 10 | B | Adivinando | B | Correcta | OTA, firmware firmado, A/B y rollback |
 
-### Razonamiento individual del bloque 11
+### Explicación individual
 
-1. **B, Seguro, correcta.** Una aplicación web adaptable evita instalaciones por sistema operativo y centraliza actualizaciones de un catálogo sin requisitos especiales de hardware. Aplicaciones nativas multiplicarían distribución y mantenimiento sin ventaja específica.
-2. **C, Adivinando, correcta.** Una PWA puede diseñarse con Service Worker, caché, almacenamiento duradero y sincronización tras recuperar conexión. Conservar solo formularios en memoria arriesga pérdida; exigir servidor impide operar sin red. **El sustentante declara no saber qué es una PWA: no consolidado.**
-3. **A, Seguro, correcta.** Acceso Bluetooth y actividad con pantalla bloqueada exigen APIs nativas, permisos y respeto a políticas Android/iOS; un navegador o temporizador permanente no garantiza esa ejecución.
-4. **C, Duda, correcta.** SDK de fabricante exclusivo de Windows y USB local, con operación offline, favorece aplicación Windows con integración nativa. Una PWA convencional no puede cargar directamente bibliotecas Windows ni trasladar sin más USB al servidor.
-5. **B, Duda, correcta.** Un puente/módulo nativo expone capacidades hardware que el framework compartido no cubre; HTTP no reemplaza la API nativa local y modificar el SO sería desproporcionado.
-6. **A, Seguro, correcta.** Ejecutable Windows x86-64 no es directamente compatible con Linux ARM64; recompilar para destino y verificar ABI, dependencias y librerías. Un contenedor por sí solo no transforma la arquitectura o el formato del binario.
-7. **C, Seguro, correcta.** El secreto puesto en JS cliente se considera comprometido: rotarlo y guardar el nuevo en un backend. Ofuscación y localStorage siguen exponiéndolo al usuario.
-8. **B, Adivinando, correcta.** Un RTOS permite diseñar planificación de tareas críticas según prioridades, plazos y recursos limitados. SO de escritorio/navegador no aportan las garantías adecuadas. **Desconoce RTOS: no consolidado.**
-9. **B, Adivinando, incorrecta. Respuesta A.** Android/iOS suspenden o terminan aplicaciones: no se puede mantener fiable un WebSocket indefinido cuando están cerradas o suspendidas. Usar servicios push del SO y consultar estado actualizado al reabrir; un temporizador HTTP de interfaz tampoco persiste indefinidamente. Reforzar ciclo de vida, push, WebSocket, reanudación, permisos y entregas no garantizadas.
-10. **B, Adivinando, correcta.** OTA es actualización remota de firmware. La firma digital verifica autenticidad/integridad; particiones A/B conservan firmware funcional y permiten revertir si falla la nueva versión o se interrumpe energía. Sobrescribir firmware activo arriesga inutilizar equipo y quitar verificaciones criptográficas empeora seguridad. **Desconoce OTA y no entendió el escenario: prioridad alta y no consolidado.**
+1. **B, correcta:** catálogo multiplataforma sin instalación y sin hardware especial favorece una web adaptable; apps nativas requieren empaquetado y distribución adicionales.
+2. **C, correcta por adivinanza:** PWA combina aplicación web, caché, persistencia offline y estrategia de sincronización tras reconectar. Memoria sola puede perder datos; servidor único impide trabajar offline. **Desconoce PWA: no consolidado.**
+3. **A, correcta:** Bluetooth mientras el teléfono está bloqueado requiere estudiar APIs nativas y políticas de Android/iOS; temporizador de una página web no garantiza ejecución permanente.
+4. **C, correcta con duda:** un SDK USB exclusivo para Windows, con uso sin internet, aconseja una app local con integración al SDK. Ni una PWA ordinaria ni el servidor web acceden directamente a ese SDK local.
+5. **B, correcta con duda:** implementar módulo/puente nativo permite usar una API de hardware aún no expuesta por el framework. HTTP no sustituye automáticamente funciones nativas y modificar el SO no es opción práctica.
+6. **A, correcta:** Windows x86-64 y Linux ARM64 tienen distintos sistemas, arquitecturas y binarios; se requiere compilación compatible y revisión de dependencias, ABI y librerías. Contenedor no cambia mágicamente el binario.
+7. **C, correcta:** clave privada publicada en JavaScript debe rotarse y usarse mediante un backend que gestione el secreto. Ofuscación o localStorage no la protege del usuario final.
+8. **B, correcta por adivinanza:** RTOS facilita planificación con plazos/previsibilidad sobre dispositivos de RAM limitada. Un SO de escritorio o navegador no garantizan esa planificación. **Desconoce RTOS: no consolidado.**
+9. **A, incorrecta (eligió B):** para avisar a apps cerradas o suspendidas corresponde integrar servicios push del sistema, luego actualizar al abrir. Una conexión WebSocket de la app no puede permanecer garantizada cuando el SO suspende su ejecución; temporizador HTTP de interfaz tampoco. **Reforzar ciclo de vida móvil y notificaciones push.**
+10. **B, correcta por adivinanza:** OTA actualiza firmware remotamente. Firmas verifican autenticidad/integridad; particiones A/B conservan versión funcional durante instalación y permiten rollback. Sobrescribir firmware activo o eliminar verificaciones añade riesgos. **Desconoce OTA y el escenario: prioridad alta y no consolidado.**
 
-### Evaluación de desempeño del bloque 11
-
-- **Dificultad interna:** fundamentales 3/3, intermedias 3/3, avanzadas 3/4.
-- **Seguridad:** cuatro aciertos seguros, dos con duda y cuatro adivinanzas (tres correctas, una incorrecta).
-- **Error identificado:** reactivo 9, conceptual/de selección de mecanismo para recibir eventos en aplicación móvil suspendida; no hay evidencia de que haya sido descuido o error de cálculo.
-- **Conocimientos por adquirir:** PWA, Service Worker, persistencia/sincronización offline; RTOS, tareas críticas y tiempos de respuesta; OTA, firmware, bootloader, firma de imagen, particiones A/B y rollback.
-- **Dudas pendientes:** integración SDK nativo en Windows y puentes a funciones nativas de frameworks multiplataforma.
-- **Fortalezas observadas:** aplicación web multiplataforma, requisitos de permisos de hardware móvil, compilación para sistema/arquitectura destino, gestión de secretos web.
-- **Limitación:** acierto adivinado no es evidencia de dominio, y la evaluación es práctica original, no puntuación psicométrica Ceneval.
-
-## Cierre del Área 3 — Desarrollo de Sistemas de Software (bloques 7–11)
+### Cierre del Área 3 — Bloques 7 al 11
 
 | Bloque | Subárea | Aciertos | Tiempo | Seguro | Duda | Adivinando |
 |---:|---|---:|---:|---:|---:|---:|
-| 7 | 3.1 Lenguajes de desarrollo de software | 6/10 | 9:51 | 2 | 4 | 4 |
-| 8 | 3.2 Paradigmas de programación | 8/10 | 9:37 | 5 | 3 | 2 |
-| 9 | 3.3 Entornos de desarrollo | 10/10 | 6:03 | 6 | 2 | 2 |
-| 10 | 3.4 Gestión de datos | 8/10 | 10:37 | 3 | 3 | 4 |
-| 11 | 3.5 Plataformas de desarrollo | 9/10 | 6:24 | 4 | 2 | 4 |
-| **Total Área 3** | **5/5 subáreas** | **41/50 (82%)** | **42:32** | **20** | **14** | **16** |
+| 7 | Lenguajes de desarrollo | 6/10 | 9:51 | 2 | 4 | 4 |
+| 8 | Paradigmas de programación | 8/10 | 9:37 | 5 | 3 | 2 |
+| 9 | Entornos de desarrollo | 10/10 | 6:03 | 6 | 2 | 2 |
+| 10 | Gestión de datos | 8/10 | 10:37 | 3 | 3 | 4 |
+| 11 | Plataformas de desarrollo | 9/10 | 6:24 | 4 | 2 | 4 |
+| **Área 3 total** | **5/5 subáreas** | **41/50** | **42:32** | **20** | **14** | **16** |
 
-**Calibración:** respuestas seguras 18/20 correctas; con duda 11/14; adivinadas 12/16. La precisión bruta de 82% no equivale a dominio de 82% de conocimientos, y los aciertos por adivinanza no se marcan como consolidados.
+**Confianza en Área 3:** 18/20 seguras correctas, 11/14 con duda correctas y 12/16 adivinadas correctas. No dar por dominados los temas acertados adivinando.
 
-**Fortalezas:** entornos de desarrollo, selección de herramientas y despliegue, seguridad de claves de API, selección de plataforma web/nativa, uso básico de funciones puras y encapsulación.  
-**Debilidades:** comportamiento de código en Java/C#/JS; polimorfismo y cierres; \`reduce\`, Liskov/DIP; lógica \`NULL\` en SQL, especialmente \`NOT IN\`; concurrencia/transacciones/aislamiento; plataformas especializadas PWA/RTOS/OTA, notificaciones push; trazas, perfiladores, analizadores estáticos y source maps.
+**Fortalezas observadas:** elección de herramientas/entornos y plataformas, seguridad de claves, despliegue y configuración. **Dificultades:** semántica específica de Java/C#/JavaScript, polimorfismo, cierres, reduce, Liskov/DIP, NULL/SQL y concurrencia, PWA/RTOS/OTA, push vs WebSocket suspendido, trazas/perfiladores/analizadores.
 
-### Diagnóstico integral acumulado al cerrar el Área 3
+### Diagnóstico acumulado, 11 bloques
 
-| Indicador | Valor |
+| Indicador | Resultado |
 |---|---:|
-| Bloques completos | 11 de 19 |
-| Reactivos contestados | 110 de 190 |
-| Correctos | 100 |
-| Incorrectos | 10 |
-| Porcentaje bruto de práctica | 90.91 % |
-| Tiempo total | 91 min 17 s (5477 segundos) |
-| Tiempo medio global | 49.79 s/pregunta |
+| Bloques terminados | 11/19 |
+| Reactivos contestados | 110/190 |
+| Aciertos y errores | 100 correctos, 10 incorrectos |
+| Precisión bruta | 90.91 % |
+| Tiempo acumulado | 91:17 |
 | Seguro | 56/58 correctas |
 | Duda | 23/26 correctas |
-| Adivinando | 21/26 correctas (no consolidadas) |
+| Adivinando | 21/26 correctas, no consolidadas |
 | Área 1: Análisis | 29/30 |
 | Área 2: Diseño | 30/30 |
 | Área 3: Desarrollo | 41/50 |
 
-### Prioridades transversales, vigentes tras bloque 11
+### Prioridades después del bloque 11
 
-1. **CRÍTICA: Bloque 10, pregunta 7, \`NOT IN\` con \`NULL\`.** El sustentante pidió explícitamente estudiarla muy a detalle y sigue sin comprender la semántica. Mantener la guía de estudio de 7 pasos definida más arriba: verdad trivalente, \`UNKNOWN\`, \`<>\`, \`IS NULL\`, \`NOT EXISTS\`, condiciones de subconsultas vacías y ejercicios nuevos con razonamiento.
-2. **ALTA: Concurrencia SQL:** transacciones, actualizaciones condicionales, isolation levels, write skew, serializable y reintentos.
-3. **ALTA: Semántica y paradigmas:** paso de parámetros Java, división entera C#, \`const\` JS, \`struct\` vs \`class\`, copia superficial/profunda, \`checked\`, despacho dinámico, closures y pureza, \`reduce\`, Liskov, DIP.
-4. **ALTA: Plataformas:** PWA/Service Workers/offline, RTOS, OTA/firmware/particiones A-B/rollback, push vs WebSocket en segundo plano y ciclo de vida móvil.
-5. **MEDIA: Herramientas:** source maps, logging, trazas, perfiladores y analizadores estáticos.
-6. **TRANSVERSAL: Análisis y Diseño:** UML, ATAM, MoSCoW, arquitectura en capas, CQRS, modelado documental, fragmentación y replicación de datos.
+1. **CRÍTICA:** pregunta 7 del bloque 10, `NOT IN` con `NULL`, comparaciones `<>`, lógica trivalente TRUE/FALSE/UNKNOWN, `NOT EXISTS` y razonamiento paso a paso. El sustentante solicitó explícitamente revisarla muy a detalle. El guion profundo de repaso queda conservado arriba.
+2. **ALTA:** concurrencia SQL, aislamiento, transacciones, actualización atómica, write skew, reintentos y consistencia.
+3. **ALTA:** tipos, referencias y semántica de Java/C#/JavaScript, división entera, `struct`/`class`, `const`, copias, `checked`; paradigmas, polimorfismo, cierres, `reduce`, Liskov y DIP.
+4. **ALTA:** PWA, Service Workers, RTOS, OTA, firmware, particiones A/B, rollback, push y ciclo de vida móvil.
+5. **MEDIA:** source maps, trazas, registro de consola, perfiladores, analizadores estáticos.
+6. **TRANSVERSAL:** UML, ATAM, MoSCoW, arquitectura en capas, CQRS, documentos NoSQL, fragmentación y replicación.
 
-**Próximo bloque:** 12 de 19, Área 4 Gestión de Proyectos de Software, subárea 4.1 Gestión de tiempos, costos, recursos humanos y riesgo. Mantener 10 preguntas originales, 3 opciones A/B/C, dificultad progresiva, registro de seguridad y tiempo. No revelar respuestas antes de la entrega.
+**Siguiente bloque:** 12/19, Área 4 Gestión de Proyectos de Software, subárea 4.1 Gestión de tiempos, costos, recursos humanos y riesgo. Este diagnóstico de práctica original no permite inferir una puntuación oficial Ceneval.
 
-**Sincronización:** al finalizar el bloque 11, se acordó sincronizar el registro completo del Área 3 y los archivos de seguimiento, bitácora e índice de ejercicios del repositorio \`YaelQCI/EstudioEgel\` en rama \`main\`. Preservar intacto el diagnóstico inicial independiente de 30 reactivos y la prioridad crítica de repaso SQL.
 
 ---
 
-*Registro acumulativo de diagnóstico de práctica original hasta el bloque 11; no equivale a resultado oficial Ceneval.*
+## Bloque 12 — Área 4: Gestión de Proyectos de Software / Subárea 4.1: Gestión de tiempos, costos, recursos humanos y riesgo
+
+**Fecha:** 14 de noviembre de 2026. **Reactivos:** 10 originales de práctica; **resultado:** 6/10 (60 %). **Tiempo:** 8:48 = 528 s; 52.8 segundos por pregunta. **Seguridad:** 3 «Seguro» (3 aciertos), 1 «Duda» (1 acierto) y 6 «Adivinando» (2 aciertos y 4 errores).
+
+**Observación textual del sustentante:** «No conozco ninguno de los terminos utilizados que son abreviaciones en estas 10 preguntas». Consecuencia: estudiar vocabulario y fórmulas antes de interpretar los aciertos por azar como dominio.
+
+| Pregunta | Respuesta | Seguridad | Clave | Resultado | Concepto |
+|---:|:---:|---|:---:|---|---|
+| 1 | B | Seguro | B | Correcta | Nivelación de recursos en holgura |
+| 2 | C | Duda | C | Correcta | Ruta crítica con predecesoras, 12 días |
+| 3 | B | Adivinando | A | Incorrecta | PERT = 6 días |
+| 4 | C | Adivinando | C | Correcta, no consolidada | CPI = 0.75; SPI = 0.90 |
+| 5 | A | Adivinando | B | Incorrecta | EAC = 500,000 MXN |
+| 6 | A | Seguro | A | Correcta | Cuello de botella y capacitación cruzada |
+| 7 | C | Adivinando | C | Correcta, no consolidada | Pérdida monetaria esperada = 21,000 MXN |
+| 8 | B | Seguro | B | Correcta | Mitigación preventiva del riesgo |
+| 9 | A | Adivinando | B | Incorrecta | Crashing de dos rutas críticas, costo mínimo 4,000 MXN |
+| 10 | B | Adivinando | A | Incorrecta | TCPI al BAC = 1.25 |
+
+### Razonamientos por reactivo y distractores
+
+1. **B correcta, Seguro.** El especialista participa en dos actividades independientes con holgura: nivelar recursos desplazando una dentro de holgura disponible evita sobreasignación sin añadir costo. A recurre a horas extra no requeridas; C elimina pruebas indispensables.
+2. **C correcta, Duda.** A(3) → C(2) = 5 días; B(4) = 4 días. D espera ambas, inicia en día 5, dura 5; E dura 2; proyecto acaba en **12 días**, ruta crítica A→C→D→E. B→D→E suma 11, pero D espera a C. Distractor B (10 días) omite duración; A identifica incorrectamente ruta y duración.
+3. **A correcta; B incorrecta, Adivinando.** PERT = (optimista + 4×más probable + pesimista) / 6 = (2+4×5+14)/6 = **6 días**. B = 7 representa promedio simple no ponderado; C = 5.33 no corresponde a la estimación ponderada.
+4. **C correcta, Adivinando, no consolidada.** CPI (Cost Performance Index) = EV/AC = 90/120 = **0.75**; SPI (Schedule Performance Index) = EV/PV = 90/100 = **0.90**. A invierte relaciones; B intercambia índices.
+5. **B correcta; A incorrecta, Adivinando.** Pronóstico EAC (Estimate at Completion) bajo CPI persistente: EAC = BAC/CPI = 400,000/0.8 = **500,000 MXN**. A multiplica en vez de dividir, confundiendo eficiencia insuficiente con reducción de costo; C no corresponde a esta fórmula.
+6. **A correcta, Seguro.** Distribuir conocimientos, formar más revisores y controlar el trabajo en curso resuelve cuello de botella. B incorpora más cambios a la fila de aprobación; C aumenta WIP y empeora espera.
+7. **C correcta, Adivinando, no consolidada.** Pérdida monetaria esperada: 0.20×80,000 + 0.10×50,000 = 16,000 + 5,000 = **21,000 MXN**. A o B no suman los valores esperados por riesgo; no se suman simplemente los impactos sin ponderar. No requiere independencia para que la esperanza de la suma sea la suma de las esperanzas.
+8. **B correcta, Seguro.** Alternativa técnica y validación temprana reducen probabilidad/impacto = mitigación. A es aceptación; C no transfiere efectivamente el riesgo a un tercero.
+9. **B correcta; A incorrecta, Adivinando.** Las dos rutas P-Q-S y P-R-S duran 10 días. Reducir solo Q en 1 día deja P-R-S en 10. Reducir Q y R en 1 día cada uno cuesta 2,000+2,000=**4,000 MXN** y ambas rutas pasan a 9. Reducir S cuesta 5,000 y también baja ambas, pero es más caro. Reducir P costaría 7,000.
+10. **A correcta; B incorrecta, Adivinando.** TCPI (To-Complete Performance Index), respecto a BAC: (BAC−EV)/(BAC−AC) = (500,000−250,000)/(500,000−300,000) = 250,000/200,000 = **1.25**. B=0.83 puede resultar de calcular EV/AC (CPI actual), que no mide el rendimiento requerido de lo pendiente; C=1.00 no alcanza el objetivo si persiste el comportamiento actual.
+
+### Vocabulario y siglas para estudiar antes del repaso
+
+- **PERT**: Program Evaluation and Review Technique, estimación ponderada de duración (O + 4M + P)/6.
+- **PV**: Planned Value, valor planificado; **EV**: Earned Value, valor ganado; **AC**: Actual Cost, costo real.
+- **CPI**: Cost Performance Index = EV/AC, índice de desempeño del costo.
+- **SPI**: Schedule Performance Index = EV/PV, índice de desempeño del cronograma.
+- **BAC**: Budget at Completion, presupuesto autorizado total.
+- **EAC**: Estimate at Completion, estimación del costo final; bajo CPI persistente, BAC/CPI.
+- **TCPI**: To-Complete Performance Index, eficiencia futura necesaria; respecto a BAC, (BAC−EV)/(BAC−AC).
+- **EMV**: Expected Monetary Value, valor monetario esperado = suma de probabilidad × impacto de cada riesgo.
+- **Crashing**: reducción de duración de actividades mediante costo adicional, con atención a todas las rutas críticas.
+- **Ruta crítica**: camino de actividades dependientes de mayor duración que determina el mínimo total sin restricciones adicionales de recursos.
+
+### Interpretación diagnóstica
+
+- **Precisión por dificultad interna:** fundamental 2/2; intermedia 2/4 (preguntas 3 y 5 incorrectas); avanzada 2/4 (preguntas 9 y 10 incorrectas). No es nivel psicométrico oficial.
+- **Seguridad:** 3/3 seguras correctas; 1/1 duda correcta; 2/6 adivinanzas correctas. La concentración de cuatro errores en respuestas adivinadas y el desconocimiento declarado de siglas indican una carencia de familiaridad conceptual/metodológica cuantitativa, más que un descuido demostrable.
+- **Fortalezas observadas:** nivelación de recursos, mitigación de riesgos y resolución de cuello de botella. **Por confirmar:** ruta crítica (correcta con duda), CPI/SPI y EMV (correctas por azar).
+- **Principales debilidades:** PERT, EAC, compresión del cronograma con múltiples rutas críticas y TCPI; formación básica en terminología PV/EV/AC/BAC. No se identificaron errores de atención o cálculo específicos verificables, puesto que el usuario declaró adivinar esos reactivos.
+
+### Acumulado después del bloque 12
+
+| Indicador | Valor |
+|---|---:|
+| Bloques terminados | 12 de 19 |
+| Reactivos | 120 de 190 |
+| Aciertos | 106 |
+| Errores | 14 |
+| Porcentaje bruto | 88.33 % |
+| Tiempo acumulado | 100:05 (1 h 40 min 05 s) |
+| Seguro | 59 de 61 correctas |
+| Duda | 24 de 27 correctas |
+| Adivinando | 23 de 32 correctas — no se considera dominio |
+| Área 1 · Análisis | 29/30 |
+| Área 2 · Diseño | 30/30 |
+| Área 3 · Desarrollo | 41/50 |
+| Área 4 · Gestión, parcial | 6/10 |
+
+### Prioridades y siguiente paso
+
+1. **CRÍTICA ANTERIOR CONSERVADA:** bloque 10, reactivo 7, `NOT IN` con `NULL`, comparaciones `<>` con nulos, `NOT EXISTS` y lógica de tres valores. El sustentante solicitó explicación muy detallada y ejercicios nuevos; no marcar como resuelto.
+2. **ALTA NUEVA:** PERT, EV/PV/AC, CPI/SPI, BAC/EAC, TCPI, EMV, ruta crítica con múltiples caminos y crashing. Estudiar siglas/relaciones de base antes de nuevos ejercicios.
+3. **ALTA ANTERIOR:** concurrencia SQL, programación y paradigmas, PWA, RTOS, OTA, UML, ATAM, MoSCoW, arquitectura en capas y CQRS, más herramientas y datos distribuidos detallados en bloques anteriores.
+4. **PRÓXIMO BLOQUE:** 13/19, subárea 4.2 Calidad de software, diez reactivos de dificultad creciente, opciones A/B/C y seguridad/tiempo.
+5. **GITHUB:** no sincronizar todavía; el acuerdo es actualizar `YaelQCI/EstudioEgel`, rama `main`, al terminar el Área 4 después del bloque 14. El estado en la conversación queda actualizado localmente.
+
+*Registro de práctica original, sin equivalencia con puntuaciones oficiales de Ceneval.*
+
+---
+
+## Bloque 13 — Área 4: Gestión de Proyectos de Software / Subárea 4.2: Calidad de software
+
+**Fecha:** 14-11-2026.  
+**Reactivos:** 10 originales, no oficiales.  
+**Aciertos:** 7/10 (70 %); 3 incorrectos.  
+**Tiempo registrado:** 9:16 (556 s); 55.6 s por pregunta.  
+**Seguridad:** 5 «Seguro» (4 correctas, 1 incorrecta); 4 «Duda» (3 correctas, 1 incorrecta); 1 «Adivinando» (0 correctas, 1 incorrecta).  
+**Observaciones textuales:** «no se que es critterio MC/DC, no se metodologias para trabajar con concurrencia,».
+
+| Reactivo | Respuesta | Seguridad | Clave | Resultado | Concepto |
+|---:|:---:|---|:---:|---|---|
+| 1 | B | Seguro | B | Correcta | Pruebas de regresión |
+| 2 | A | Seguro | A | Correcta | Eficiencia de desempeño |
+| 3 | C | Seguro | C | Correcta | Valores límite 17, 18, 65, 66 |
+| 4 | A | Duda | **B** | **Incorrecta** | Cobertura de sentencias vs ramas |
+| 5 | A | Duda | A | Correcta | Integración con BD real y migraciones |
+| 6 | C | Duda | C | Correcta | Escape de defectos, 20 % |
+| 7 | C | Adivinando | **B** | **Incorrecta** | MC/DC, independencia de condiciones |
+| 8 | A | Seguro | A | Correcta | Pruebas no deterministas: reloj y dependencias |
+| 9 | C | Duda | C | Correcta | Pruebas concurrentes de idempotencia |
+| 10 | A | Seguro | **B** | **Incorrecta** | Disponibilidad 99.9421 % frente a 99.95 % |
+
+### Razonamiento por reactivo y distractores
+
+1. **B, Seguro, correcta.** Una corrección de intereses puede romper funcionalidades que antes funcionaban; las pruebas de regresión detectan ese efecto. A (aceptación) confirma requisitos, no es la prueba principal del escenario; C (carga) evalúa rendimiento bajo volumen, no regresiones funcionales.
+2. **A, Seguro, correcta.** El requisito del 95 % de búsquedas en menos de 2 segundos bajo carga definida es eficiencia de desempeño/tiempo de respuesta. Mantenibilidad se refiere a modificar el software y compatibilidad a coexistencia/interoperabilidad, no directamente a latencia.
+3. **C, Seguro, correcta.** Para intervalo inclusivo de edades enteras [18,65], los cuatro vecinos representativos son 17 (inválido inferior), 18 (válido inferior), 65 (válido superior) y 66 (inválido superior). A solo incluye válidos, B omite extremos válidos.
+4. **B correcta, A elegida, Duda, incorrecta.** Con `if (clientePremium) { aplicarBeneficio(); } registrarCompra();`, probar solo `true` ejecuta el cuerpo y la sentencia posterior, por lo que puede alcanzarse 100 % de cobertura de sentencias; no se prueba la rama `false`. A es falsa porque `aplicarBeneficio` sí se ejecuta con true; C es falsa porque `registrarCompra` se ejecuta en ambos casos. **Error conceptual:** confundir cobertura de sentencias con cobertura de ramas/decisiones.
+5. **A, Duda, correcta.** Una prueba de integración contra un esquema real de prueba detecta referencia a columna renombrada tras migración. Simular el nombre antiguo (B) conserva falsamente el contrato anterior y pruebas visuales (C) no identifican el acceso real a la BD. Verificar práctica de migraciones y pruebas de integración.
+6. **C, Duda, correcta.** Tasa de escape definida = 20 defectos posliberación / (80 preliberación+20 posliberación) = **20 %**. A=25 % resultaría de 20/80, denominador incorrecto. B=80 % es proporción previa a liberar. Medida depende de la definición explícita del reactivo.
+7. **B correcta, C elegida, Adivinando, incorrecta.** Para `A && (B || C)`, conjunto B = (1,1,0)→true, (0,1,0)→false, (1,0,0)→false y (1,0,1)→true. Pares que prueban independencia: **A**: (1,1,0) frente a (0,1,0); **B**: (1,1,0) frente a (1,0,0); **C**: (1,0,0) frente a (1,0,1). En cada par se cambia una única condición y cambia la decisión. Opción A carece de caso para probar B por separado. Opción C elegida no contiene (1,0,1): con A=0 en (0,0,1), C no hace cambiar la decisión, por lo que no se comprueba su independencia. **Falta declarada:** significado de MC/DC, Modified Condition/Decision Coverage. Estudiar tabla de verdad, pares independientes y cobertura vs sentencias/ramas.
+8. **A, Seguro, correcta.** Congelar/controlar el reloj y sustituir servicios externos por dobles en pruebas de reglas locales reduce pruebas intermitentes. Aparte, conservar pruebas de integración específicas para el contrato real externo. Repetir hasta aprobar (B) oculta fallos; excluir de CI (C) reduce detección temprana.
+9. **C, Duda, correcta.** Ejecutar dos solicitudes con la misma clave de idempotencia simultáneamente ante servicios/BD integrados y verificar exactamente un cargo comprueba la invariante bajo carreras; simulaciones secuenciales (A) no lo demuestran y ver el nombre de una variable (B) no acredita comportamiento. **Laguna declarada:** técnicas de pruebas concurrentes. Reforzar barrera de inicio, ejecuciones repetidas, almacenamiento real, UNIQUE, transacciones/operaciones atómicas, coordinación multiproceso, evidencia de cargo único y reintentos.
+10. **B correcta, A elegida, Seguro, incorrecta.** 30 días×24 h×60 min = 43,200 min. Disponibilidad = (43,200−25)/43,200 × 100 = **99.9421296 % ≈ 99.94 %**, inferior a 99.95 %. Tiempo fuera de servicio máximo admitido = (1−0.9995)×43,200 = **21.6 minutos**. Se excedió por 3.4 minutos, no cumple. A redondea/acepta incorrectamente; C presupone un umbral de 30 minutos que no figura en el contrato. **Error de cálculo o interpretación del umbral bajo seguridad alta**; no podemos precisar si fue aritmético sin procedimiento escrito.
+
+### Evaluación diagnóstica del bloque 13
+
+- **Dificultad interna:** fundamentales 2/2; intermedios 3/4 (error Q4); avanzados 2/4 (errores Q7 y Q10).
+- **Confianza:** Seguro 4/5, Duda 3/4, Adivinando 0/1. Un error seguro Q10 exige revisar calibración. Aciertos con duda Q5, Q6, Q9 se mantienen como conocimientos por verificar.
+- **Tiempo:** 9:16 (556 s), +28 segundos respecto al bloque 12 (8:48), 55.6 s/reactivo; sin tiempos por reactivo no es posible inferir dónde se dedicó más tiempo.
+- **Errores:** Q4 conceptual (sentencias vs ramas); Q7 conceptual declarado (MC/DC); Q10 cálculo/interpretación del umbral de disponibilidad, con causa precisa no observable.
+- **Fortalezas observadas:** regresión, desempeño, límites, control de reloj/dependencias. Por confirmar integración real de BD, métricas de defectos, idempotencia concurrente.
+- **Pendientes nuevos:** MC/DC y condiciones independientes; comparación de cobertura de sentencias, decisiones y condiciones; cálculo de disponibilidad con SLA y tiempo admisible; pruebas concurrentes de idempotencia con barreras/BD real y atomicidad.
+
+### Acumulado después del bloque 13
+
+| Indicador | Valor |
+|---|---:|
+| Bloques terminados | 13 de 19 |
+| Reactivos respondidos | 130 de 190 |
+| Aciertos y errores | 113 correctos, 17 incorrectos |
+| Porcentaje bruto | 86.92 % |
+| Tiempo total | 109:21 (1 h 49 min 21 s; 6,561 s) |
+| Seguro | 63 de 66 correctas |
+| Duda | 27 de 31 correctas |
+| Adivinando | 23 de 33 correctas, **no consolidadas** |
+| Área 1 · Análisis | 29/30 |
+| Área 2 · Diseño | 30/30 |
+| Área 3 · Desarrollo | 41/50 |
+| Área 4 · Gestión, parcial | 13/20 (bloques 12 y 13) |
+
+### Prioridades de estudio y continuidad
+
+1. **CRÍTICA, pedido explícito del usuario:** pregunta 7 del bloque 10: `NOT IN` con `NULL`, `UNKNOWN`, lógica trivalente, `<>`, `NOT EXISTS` y ejercicios explicados paso a paso. La petición no está satisfecha; mantener pendiente.
+2. **ALTA, gestión cuantitativa bloque 12:** glosario de PERT, PV/EV/AC, CPI/SPI, BAC/EAC, TCPI/EMV; ruta crítica, crashing de múltiples rutas, pronósticos de costos y cálculo por escenarios.
+3. **ALTA, calidad bloque 13:** MC/DC, ramas vs sentencias, cálculo de disponibilidad, pruebas concurrentes de idempotencia.
+4. **ALTA, anterior:** concurrencia SQL, semántica Java/C#/JS, paradigma funcional/lógico, polimorfismo/closures/reduce/Liskov/DIP, PWA/RTOS/OTA, notificaciones push, herramientas de perfilado/depuración, UML, ATAM, MoSCoW, arquitectura en capas, CQRS y sistemas distribuidos.
+5. **Próximo bloque:** 14/19, subárea 4.3 Metodologías de desarrollo; al terminar esta subárea, cerrar Área 4 y **solo entonces** sincronizar con GitHub `YaelQCI/EstudioEgel` en `main`. No sincronizar antes.
+
+*Diagnóstico de práctica original; no representa un resultado oficial de Ceneval.*
+
+---
+
+## Bloque 14 — Área 4: Gestión de Proyectos de Software / Subárea 4.3: Metodologías de desarrollo
+
+**Fecha:** 14 de noviembre de 2026  
+**Reactivos:** 10 originales, de práctica (no oficiales).  
+**Resultado:** 9/10 (90 %).  
+**Tiempo:** 7:26 (446 s); 44.6 segundos por reactivo.  
+**Seguridad:** 3 «Seguro» (3 correctas), 6 «Duda» (5 correctas y 1 incorrecta), 1 «Adivinando» (1 correcta, no consolidada).  
+**Observación textual:** «No se que es la ley little, no se que es TDD, tampoco al 100 cual es el modelo espiral, tampoco story points, tampoco kaban, y medio me confundo con scrum y xp».
+
+| Reactivo | Respuesta | Confianza | Clave | Resultado | Competencia |
+|---:|:---:|---|:---:|---|---|
+| 1 | B | Duda | B | Correcta | Scrum y Product Owner |
+| 2 | B | Duda | C | **Incorrecta** | Kanban para soporte impredecible |
+| 3 | A | Duda | A | Correcta | Sprint Review |
+| 4 | C | Duda | C | Correcta | Enfoque híbrido |
+| 5 | B | Duda | B | Correcta | Cycle time |
+| 6 | A | Seguro | A | Correcta | Cambios durante el Sprint |
+| 7 | C | Duda | C | Correcta | XP y TDD |
+| 8 | B | Adivinando | B | Correcta, no consolidada | Ley de Little |
+| 9 | A | Seguro | A | Correcta | Story points y velocidad |
+| 10 | C | Seguro | C | Correcta | Modelo espiral y riesgos |
+
+### Soluciones y análisis por reactivo
+
+**1. B — Product Owner, correcta, Duda.** El Product Owner es responsable de maximizar el valor y de la gestión efectiva del Product Backlog, incluida su ordenación. El Scrum Master facilita Scrum y trabaja sobre impedimentos, pero no decide unilateralmente las prioridades del producto (A). Developers construyen el incremento y contribuyen a estimar/planificar, pero no sustituyen la responsabilidad del Product Owner (C). Reforzar responsabilidades de Scrum porque hubo duda.
+
+**2. C — Kanban, incorrecta B, Duda.** El mantenimiento con entradas impredecibles y prioridades variables se beneficia de visualizar flujo, limitar trabajo en progreso (WIP) y hacer explícitas las políticas (Kanban). B propone planificar incidentes impredecibles trimestralmente, un mal ajuste. A impone incorrectamente aplazamiento obligatorio de todo incidente nuevo en Scrum; tampoco aborda tan directamente el flujo continuo solicitado. **Error conceptual:** distinguir Scrum, Kanban y enfoques predictivos. El usuario declara desconocer Kanban; prioridad alta.
+
+**3. A — Sprint Review, correcta, Duda.** Sprint Review inspecciona resultados del Sprint junto con interesados y permite adaptar el Product Backlog. Retrospective (B) se orienta a mejorar calidad, eficacia y formas de trabajo del equipo. Planning (C) prepara el Sprint siguiente, su objetivo y su plan. Acierto con incertidumbre.
+
+**4. C — Enfoque híbrido, correcta, Duda.** Compatibiliza hitos formales de cumplimiento, documentación y auditorías con iteraciones para prototipar y validar interfaz. Cascada estricta sin prototipos (A) pospone indebidamente la validación. Eliminar controles normativos (B) incumple restricciones explícitas. Acierto con duda; reforzar selección por restricciones.
+
+**5. B — 72 horas de cycle time, correcta, Duda.** Inicio efectivo del trabajo: lunes 09:00; final: jueves 09:00; lunes→martes 24 h, martes→miércoles 24 h, miércoles→jueves 24 h: **72 h = 3 días**. Desde solicitud viernes 09:00 hasta conclusión jueves 09:00 transcurren **144 h = 6 días** de lead time (A), que incluye espera previa. C, 24 h, solo cuenta un día. **Diferenciar cycle time vs lead time**, calendario continuo y reloj efectivo, sin confundir con tiempo activo de teclado.
+
+**6. A — Negociar alcance sin comprometer Sprint Goal, correcta, Seguro.** PO y Developers pueden renegociar el alcance del Sprint Backlog conforme se aprende; ningún cambio debe poner en riesgo el Sprint Goal. Scrum Master no impone unilateralmente trabajo adicional (B). Cancelar automáticamente el Sprint por un requisito nuevo (C) es incorrecto; la cancelación está vinculada a que su objetivo se vuelva obsoleto, entre otros matices. Fortaleza observada.
+
+**7. C — TDD red-green-refactor, correcta, Duda.** En XP, TDD parte de una prueba automatizada fallida (rojo), implementa lo mínimo para pasar (verde) y refactoriza con pruebas verdes. A y B posponen indebidamente la especificación de comportamiento y pruebas. **El usuario no conoce TDD**; acertar con duda no demuestra comprensión del ciclo ni habilidad de aplicarlo.
+
+**8. B — Ley de Little, 5 días, correcta, Adivinando.** En sistema estable y con condiciones de aplicabilidad, promedio de WIP = Throughput × Cycle time. Por tanto, Cycle time = 15 elementos / (3 elementos/día) = **5 días**. A=0.2 días invierte el cociente; C=45 días multiplica WIP por throughput y da unidades erróneas. **El usuario desconoce la ley de Little**: prioridad alta, no consolidado. Conceptos asociados: WIP, throughput, estabilidad, flujo, tiempo de ciclo.
+
+**9. A — Story points, correcta, Seguro.** Story points expresan una estimación relativa dentro de un equipo, no son una unidad universal de productividad. Velocidades entre equipos con escalas diferentes no son comparables automáticamente. B infiere indebidamente 60% más productividad y C fuerza compromiso del equipo Beta a partir de una escala ajena. El usuario declara desconocer story points: registrar la discrepancia entre acierto seguro y desconocimiento terminológico; verificar con ejercicio de estimación y pronóstico, sin suponer pleno dominio.
+
+**10. C — Modelo espiral, correcta, Seguro.** Ciclos impulsados por identificación y reducción de riesgos mediante prototipos, evaluaciones y decisiones sobre siguientes actividades caracterizan el modelo espiral. Cascada estricta sin prototipos (A) demora aprendizaje técnico; entregas incrementales sin análisis explícito de riesgo (B) no reflejan tan bien el requisito central. El usuario declara conocerlo solo parcialmente; pendiente de verificación conceptual, aunque acertó seguro.
+
+### Balance diagnóstico del bloque 14
+
+- **Dificultad asignada:** fundamental 1/2; intermedia 4/4; avanzada 4/4.
+- **Seguridad:** seguras 3/3; dudas 5/6; adivinadas 1/1 (sin consolidación).
+- **Error único:** reactivo 2, conceptual/selección de método (Kanban vs predictivo), bajo duda. No hay evidencia de error de cálculo, atención o descuido.
+- **Tiempo:** 446 segundos, media 44.6 s. Solo hay tiempo global, no se puede inferir qué pregunta llevó más.
+- **Fortalezas:** valoración de Scrum para cambios sin perder Sprint Goal, comparación contextual de story points, reconocimiento del modelo espiral y del enfoque híbrido.
+- **No consolidados / repaso:** Kanban; Scrum vs XP; TDD (red-green-refactor); Ley de Little con WIP/throughput/cycle time; story points, velocidad y pronóstico; modelo espiral y evaluación explícita de riesgos; roles y eventos Scrum, lead time vs cycle time.
+
+## Cierre del Área 4 — Gestión de Proyectos de Software
+
+| Bloque | Subárea | Resultado | Tiempo | Seguro | Duda | Adivinando |
+|---:|---|---:|---:|---:|---:|---:|
+| 12 | 4.1 Gestión de tiempos, costos, recursos humanos y riesgo | 6/10 | 8:48 | 3 | 1 | 6 |
+| 13 | 4.2 Calidad de software | 7/10 | 9:16 | 5 | 4 | 1 |
+| 14 | 4.3 Metodologías de desarrollo | 9/10 | 7:26 | 3 | 6 | 1 |
+| **Total** | **Área 4** | **22/30 (73.33 %)** | **25:30** | **11** | **11** | **8** |
+
+**Calibración Área 4:** respuestas seguras 10/11 correctas; con duda 9/11; adivinadas 3/8 (no consolidadas).
+
+**Fortalezas observadas:** decisiones de gestión de recursos, mitigación de riesgos, técnicas básicas de regresión, eficiencia de desempeño, valores límite, depuración de pruebas no deterministas, Scrum práctico y selección de aproximaciones híbridas o basadas en riesgos.
+
+**Prioridades Área 4:** métodos cuantitativos PERT, PV, EV, AC, CPI, SPI, BAC, EAC, TCPI, EMV, ruta crítica y crashing; MC/DC, ramas vs sentencias, disponibilidad SLA, pruebas de concurrencia; Scrum vs Kanban vs XP, WIP, ley de Little, lead/cycle time, TDD y modelo espiral. Los aciertos adivinados o con dudas no se confunden con dominio.
+
+## Diagnóstico integral acumulado — cierre de 14 subáreas disciplinares
+
+| Indicador | Resultado |
+|---|---:|
+| Bloques concluidos | 14 de 19 (14 subáreas disciplinares) |
+| Reactivos respondidos | 140 de 190 |
+| Aciertos / errores | 122 correctos / 18 incorrectos |
+| Porcentaje bruto | 87.14 % |
+| Tiempo acumulado | 116 min 47 s = 7007 s |
+| Media de tiempo por reactivo | 50.05 s |
+| Seguro | 66 correctas de 69 |
+| Duda | 32 correctas de 37 |
+| Adivinando | 24 correctas de 34 — NO consolidadas |
+| Área 1 — Análisis | 29/30 |
+| Área 2 — Diseño | 30/30 |
+| Área 3 — Desarrollo | 41/50 |
+| Área 4 — Gestión | 22/30 |
+
+**Interpretación:** 87.14 % es precisión bruta en reactivos propios de práctica, no puntuación oficial o estimación psicométrica del EGEL.
+
+### Registro de pendientes y plan de refuerzo transversal
+
+1. **CRÍTICA: Bloque 10, pregunta 7 — `NOT IN` con `NULL`.** Petición explícita de repaso detallado que aún no se ha satisfecho. Conservar estudio de `TRUE/FALSE/UNKNOWN`, `<>`, `IS NULL`, `NOT EXISTS`, subconsulta con NULL, ejemplos paso a paso y nuevas pruebas con razonamiento escrito. No marcar dominado hasta comprobar.
+2. **ALTA: Gestión cuantitativa:** PERT, PV, EV, AC, CPI, SPI, BAC, EAC, TCPI, EMV, ruta crítica, crashing, pronóstico de costos.
+3. **ALTA: Calidad:** MC/DC, diferencias de cobertura de sentencias/ramas/condiciones, disponibilidad SLA y conversión a minutos, pruebas de concurrencia e idempotencia.
+4. **ALTA: Metodologías:** Kanban, WIP, Ley de Little, throughput, lead time y cycle time, TDD, XP vs Scrum, Scrum Review/Retrospective/Planning, story points, velocidad y modelo espiral.
+5. **ALTA: Programación/datos:** paso de parámetros Java, división entera C#, `const` JavaScript, `struct` frente a `class`, copia superficial, checked, polimorfismo, closures, funciones puras, reduce, Liskov y DIP; transacciones y concurrencia SQL.
+6. **ALTA: Plataformas:** PWA, RTOS, OTA, notificaciones push frente a WebSocket en segundo plano.
+7. **TRANSVERSAL:** UML, ATAM, MoSCoW, arquitectura en capas, CQRS, bases NoSQL y distribuidas (sharding/replicación), source maps, trazas, logging, perfiladores y analizadores estáticos.
+8. **COMUNICACIÓN:** acentuación, redacción indirecta y comprensión lectora con más dificultad; preservar evidencia inicial de debilidad en acentos.
+
+**Siguiente:** bloque 15 de 19, primera subárea de práctica de Lenguaje y Comunicación; completar los cinco bloques de esta sección. Se sincroniza con GitHub `YaelQCI/EstudioEgel` en `main` el cierre del Área 4 y los bloques 12–14.
+
+*Registro de práctica diagnóstica original. Los 190 reactivos son un plan de estudio propio, no el formato exacto del examen oficial.*
