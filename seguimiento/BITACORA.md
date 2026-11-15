@@ -24,8 +24,11 @@ Tiempo por bloque: 8:00, 7:53 y 6:04. Revisión y pausas no medidas. [Respuestas
 | 2026-11-14 | 9 — Entornos de desarrollo | 6:03 | 10/10 | 6 / 2 / 2 |
 | 2026-11-14 | 10 — Gestión de datos | 10:37 | 8/10 | 3 / 3 / 4 |
 | 2026-11-14 | 11 — Plataformas de desarrollo | 6:24 | 9/10 | 4 / 2 / 4 |
+| 2026-11-14 | 12 — Tiempo, costos, recursos y riesgos | 8:48 | 6/10 | 3 / 1 / 6 |
+| 2026-11-14 | 13 — Calidad de software | 9:16 | 7/10 | 5 / 4 / 1 |
+| 2026-11-14 | 14 — Metodologías de desarrollo | 7:26 | 9/10 | 3 / 6 / 1 |
 
-**Acumulado integral al bloque 11:** 100/110 (90.91 %) en 91:17. **Área 3:** 41/50 en 42:32, 20 seguras, 14 dudas y 16 adivinadas. Error en bloque 11 pregunta 9: WebSocket frente a push con aplicación suspendida. El usuario declaró desconocer PWA, RTOS, OTA y no comprender pregunta 10, acertada por adivinanza. **Prioridad crítica expresa:** bloque 10 pregunta 7, `NOT IN` con `NULL` y lógica de tres valores; sesión de repaso detallada pendiente. Conserva las deficiencias de semántica de lenguajes, paradigmas y concurrencia, más UML, ATAM, MoSCoW, CQRS y sistemas distribuidos. [Registro detallado](../ejercicios/EGEL_ISOFT_diagnostico_integral_registro.md). Este diagnóstico de 110 reactivos es independiente del inicial de 30.
+**Acumulado integral al bloque 14:** 122/140 (87.14 %) en 116:47. **Área 4:** 22/30 en 25:30 (4.1: 6/10, 4.2: 7/10, 4.3: 9/10). Confianza acumulada: Seguro 66/69, Duda 32/37 y Adivinando 24/34 correctas. Prioridad crítica explícita: bloque 10, pregunta 7 (`NOT IN` con `NULL`) para repaso profundo no completado. Otros pendientes: PERT/CPI/SPI/BAC/EAC/TCPI/EMV, crashing, MC/DC, SLA, concurrencia, Kanban, ley de Little, TDD, story points, modelo espiral y los anteriores de programación y diseño. [Registro detallado](../ejercicios/EGEL_ISOFT_diagnostico_integral_registro.md).
 
 ## Plantilla de sesión
 
@@ -47,3 +50,8 @@ Registrar también las sesiones parciales; no inventar resultados ni marcar tema
 ## Aclaración posterior
 
 El usuario declara conocer los valores límite (pregunta 15) y posible confusión al escribir. Confirma adivinación en la 17. Se conserva el resultado bruto y se verificará la 15 con práctica nueva.
+
+
+## Cierre Área 4 — bloque 14
+
+Tiempo 7:26; 9/10 (error Q2 Kanban vs enfoque predictivo). 3 seguras correctas, 5 de 6 dudosas correctas, 1 adivinada correcta no dominada. El sustentante desconoce Kanban, ley de Little, TDD, story points y parcialmente modelo espiral; se confunde entre Scrum y XP. Las tareas de refuerzo de Área 4 y la prioridad crítica sobre `NOT IN` con `NULL` persisten. Siguiente: bloque 15 de 19 (Lenguaje y Comunicación).
