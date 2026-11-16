@@ -55,3 +55,20 @@ El usuario declara conocer los valores límite (pregunta 15) y posible confusió
 ## Cierre Área 4 — bloque 14
 
 Tiempo 7:26; 9/10 (error Q2 Kanban vs enfoque predictivo). 3 seguras correctas, 5 de 6 dudosas correctas, 1 adivinada correcta no dominada. El sustentante desconoce Kanban, ley de Little, TDD, story points y parcialmente modelo espiral; se confunde entre Scrum y XP. Las tareas de refuerzo de Área 4 y la prioridad crítica sobre `NOT IN` con `NULL` persisten. Siguiente: bloque 15 de 19 (Lenguaje y Comunicación).
+
+
+## Cierre del diagnóstico integral — bloques 15 a 19 (15 de noviembre de 2026)
+
+| Fecha | Bloque / subárea | Tiempo | Aciertos válidos | Seguridad (Seguro / Duda / Adivinando) |
+|---|---|---:|---:|---:|
+| 2026-11-15 | 15 — Comprensión Lectora, ámbito de estudio | 9:24 | 10/10 | 9 / 1 / 0 |
+| 2026-11-15 | 16 — Comprensión Lectora, ámbito literario | 8:13 | 10/10 | 10 / 0 / 0 |
+| 2026-11-15 | 17 — Comprensión Lectora, participación social | 8:42 | 9/9 válidos (1 anulable) | 8 / 1 / 0 válidos; 1 duda anulada |
+| 2026-11-15 | 18 — Redacción Indirecta, ámbito de estudio | 7:42 | 9/10 | 4 / 4 / 2 |
+| 2026-11-15 | 19 — Redacción Indirecta, participación social | 5:29 | 10/10 | 8 / 1 / 1 |
+
+**Lenguaje y Comunicación:** Comprensión Lectora 29/29 válidos en 26:19; Redacción Indirecta 19/20 en 13:11; total 48/49 válidos en 39:30. El bloque 17, reactivo 4, se anuló por inconsistencia entre puntuaciones y orden de clasificación de la convocatoria.
+
+**Acumulado final de 19 bloques:** 170/189 válidos (89.95 %), 190 presentados, 1 anulable, 156:17. Confianza global: Seguro 105/108 correctas; Duda 38/44; Adivinando 27/37 (no consolidar). Áreas: Análisis 29/30; Diseño 30/30; Desarrollo 41/50; Gestión 22/30; Comprensión Lectora 29/29 válidos; Redacción Indirecta 19/20.
+
+**Observaciones de cierre:** bloque 18, error en «prevee» frente a «prevé»; aun/aún e interrogativos indirectos acertados parcialmente por adivinación. Bloque 19, 10/10, pero el usuario declara dificultad para distinguir dos puntos y punto y coma; practicarlo antes de marcar puntuación como dominada. Próxima fase: plan de refuerzo, con prioridad crítica en bloque 10, pregunta 7, NOT IN con NULL.
