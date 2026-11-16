@@ -5,16 +5,18 @@
 **Tipo de evaluación:** Práctica diagnóstica original; no equivale a un examen oficial ni permite asignar una calificación ICNE.  
 **Plan de cobertura:** 19 subáreas (14 disciplinares y 5 de Lenguaje y Comunicación), 10 preguntas por subárea, total estimado de 190 preguntas. Esta distribución de práctica **no representa** exactamente las ponderaciones del examen oficial.
 
-## Estado global
+## Estado global — cierre final
 
 | Indicador | Resultado |
 |---|---:|
-| Bloques finalizados | 14 de 19 |
-| Reactivos respondidos | 140 de 190 |
-| Aciertos acumulados | 122 |
-| Errores acumulados | 18 |
-| Porcentaje acumulado (provisional) | 87.14 % |
-| Tiempo acumulado | 116 min 47 s |
+| Bloques finalizados | 19 de 19 |
+| Reactivos presentados | 190 de 190 |
+| Reactivos válidos | 189 |
+| Reactivos anulados | 1 (bloque 17, reactivo 4) |
+| Aciertos acumulados | 170 |
+| Errores válidos | 19 |
+| Precisión ajustada | 89.95 % (170/189) |
+| Tiempo acumulado | 156 min 17 s |
 
 ## Bloque 1 — Sección disciplinar / Área 1: Análisis de Sistemas de Software / Subárea 1.1: Tipos de requerimientos
 
@@ -1127,3 +1129,165 @@ La dificultad de los reactivos fue asignada para esta práctica, no calibrada of
 **Siguiente:** bloque 15 de 19, primera subárea de práctica de Lenguaje y Comunicación; completar los cinco bloques de esta sección. Se sincroniza con GitHub `YaelQCI/EstudioEgel` en `main` el cierre del Área 4 y los bloques 12–14.
 
 *Registro de práctica diagnóstica original. Los 190 reactivos son un plan de estudio propio, no el formato exacto del examen oficial.*
+
+
+---
+
+## Bloque 15 — Lenguaje y Comunicación / Comprensión Lectora / Subárea 1.1: Ámbito de estudio
+
+**Fecha:** 15-11-2026. **Resultado:** 10/10. **Tiempo:** 9:24. **Seguridad:** 9 Seguro, 1 Duda, 0 Adivinando.
+
+| Reactivo | Respuesta | Seguridad | Clave | Resultado |
+|---:|:---:|---|:---:|---|
+| 1 | B | Seguro | B | Correcta |
+| 2 | C | Seguro | C | Correcta |
+| 3 | A | Seguro | A | Correcta |
+| 4 | B | Duda | B | Correcta |
+| 5 | C | Seguro | C | Correcta |
+| 6 | C | Seguro | C | Correcta |
+| 7 | A | Seguro | A | Correcta |
+| 8 | B | Seguro | B | Correcta |
+| 9 | A | Seguro | A | Correcta |
+| 10 | C | Seguro | C | Correcta |
+
+**Corrección y diagnóstico:** en la reseña académica, el reactivo 1 recuperó la relación entre roles de discusión, referencias textuales y justificación de interpretaciones; el 2 identificó la tesis matizada de que la discusión colectiva puede enriquecer, pero no sustituir, la lectura individual; el 3 reconoció las limitaciones del corpus y la falta de comparación longitudinal; el 4 distinguió la utilidad práctica de un anexo de una demostración concluyente de eficacia; y el 5 seleccionó mejoras metodológicas que responden a las limitaciones descritas. En el artículo de investigación, el 6 comparó correctamente diferencias entre resultados de inferencia y de comprensión literal; el 7 identificó límites para atribuir causalidad por falta de asignación aleatoria y medición inicial; el 8 interpretó correctamente los 35 minutos efectivos de lectura frente a la duración total de sesión; el 9 reconoció que los resultados sugieren asociación inmediata, no causalidad ni permanencia; y el 10 identificó la recomendación de replicar con asignación aleatoria, medición inicial y evaluaciones posteriores. **Única duda:** función argumentativa de anexos académicos y distinción entre utilidad de aplicación y evidencia de eficacia. No hubo errores.
+
+---
+
+## Bloque 16 — Lenguaje y Comunicación / Comprensión Lectora / Subárea 1.2: Ámbito literario
+
+**Fecha:** 15-11-2026. **Estímulos:** cuento «La línea que quedaba» y ensayo «Manual para perderse un poco». **Resultado:** 10/10. **Tiempo:** 8:13. **Seguridad:** 10 Seguro, 0 Duda, 0 Adivinando.
+
+| Reactivo | Respuesta | Seguridad | Clave | Resultado |
+|---:|:---:|---|:---:|---|
+| 1 | B | Seguro | B | Correcta |
+| 2 | C | Seguro | C | Correcta |
+| 3 | A | Seguro | A | Correcta |
+| 4 | B | Seguro | B | Correcta |
+| 5 | C | Seguro | C | Correcta |
+| 6 | A | Seguro | A | Correcta |
+| 7 | C | Seguro | C | Correcta |
+| 8 | B | Seguro | B | Correcta |
+| 9 | A | Seguro | A | Correcta |
+| 10 | C | Seguro | C | Correcta |
+
+**Corrección y diagnóstico:** en el cuento, B identificó el encargo de Inés de pintar los muros de la antigua estación; C interpretó el conflicto entre renovar el espacio y conservar la memoria; A reconoció que Inés decide conservar solo una parte de la marca; B evaluó las motivaciones contrapuestas de Tomás y Ada sin convertirlas en indiferencia; y C interpretó la marca como memoria compatible con la continuidad del espacio. En el ensayo, A identificó que el mapa puede ser útil para llegar a un destino; C interpretó la metáfora que contrapone distancia calculada y atención humana; B reconoció la librería como ejemplo de un hallazgo imprevisto; A identificó el hospital como contraejemplo que matiza la tesis, pues hay situaciones en que la rapidez es prioritaria; y C sintetizó la idea de que una ruta eficiente y una mirada curiosa pueden coexistir. **Fortaleza:** inferencias sobre personajes, símbolos, recursos narrativos, metáforas y matices argumentativos sustentadas en el texto. Sin errores ni dudas declaradas.
+
+---
+
+## Bloque 17 — Lenguaje y Comunicación / Comprensión Lectora / Subárea 1.3: Ámbito de participación social
+
+**Fecha:** 15-11-2026. **Estímulos:** convocatoria «Vecindarios con sombra» y nota «Seis cruces escolares ya funcionan». **Resultado previsto:** 9/10. **Reactivo anulable:** pregunta 4, por contradicción interna de datos. **Resultado ajustado:** 9/9 válidos. **Tiempo:** 8:42. **Seguridad:** 8 Seguro (8 correctas), 2 Duda (1 correcta y 1 anulable), 0 Adivinando.
+
+| Reactivo | Respuesta | Seguridad | Clave prevista | Resultado |
+|---:|:---:|---|:---:|---|
+| 1 | B | Seguro | B | Correcta |
+| 2 | C | Seguro | C | Correcta |
+| 3 | A | Seguro | A | Correcta |
+| 4 | A | Duda | B | Anulable |
+| 5 | C | Seguro | C | Correcta |
+| 6 | A | Seguro | A | Correcta |
+| 7 | C | Seguro | C | Correcta |
+| 8 | B | Duda | B | Correcta |
+| 9 | A | Seguro | A | Correcta |
+| 10 | C | Seguro | C | Correcta |
+
+**Corrección y diagnóstico:** Q1 identificó requisitos simultáneos de integrantes y residencia de la persona representante; Q2 distinguió la subsanación de un archivo ilegible de la incorporación tardía de documentos; Q3 ubicó la autorización municipal después de la selección y antes del convenio; Q5 reconoció que superar 70 puntos no garantiza apoyo y que se financian como máximo cuatro propuestas según orden; Q6 sumó los cinco cruces que esperan señalización y los tres sin obras (8 fuera de operación); Q7 distinguió una disminución observada de velocidad (41 a 34 km/h en dos cruces) de una prueba causal sobre accidentes; Q8 reconoció el sesgo potencial de una encuesta voluntaria de 120 participantes; Q9 identificó la perspectiva ciudadana sobre rampas, obstáculos y seguimiento; Q10 seleccionó un titular que separa seis cruces operativos de cinco habilitaciones futuras condicionadas. **Q4 se anula:** el escenario coloca 86 puntos en quinto lugar y 72 en cuarto, aunque la convocatoria establece orden descendente y no plantea empates. No se penaliza ni se usa como evidencia de debilidad. **Comprensión Lectora queda en 29/29 reactivos válidos.**
+
+---
+
+## Bloque 18 — Lenguaje y Comunicación / Redacción Indirecta / Subárea 2.1: Ámbito de estudio
+
+**Fecha:** 15-11-2026. **Resultado:** 9/10. **Tiempo:** 7:42. **Seguridad:** Seguro 4/4; Duda 3/4; Adivinando 2/2 (no consolidadas).
+
+| Reactivo | Respuesta | Seguridad | Clave | Resultado | Dimensión |
+|---:|:---:|---|:---:|---|---|
+| 1 | A | Adivinando | A | Correcta, no consolidada | Comunicativa |
+| 2 | B | Seguro | B | Correcta | Comunicativa |
+| 3 | B | Duda | B | Correcta | Gramatical-semántica |
+| 4 | B | Duda | B | Correcta | Gramatical-semántica |
+| 5 | B | Seguro | B | Correcta | Gramatical-semántica |
+| 6 | B | Seguro | B | Correcta | Gramatical-semántica |
+| 7 | B | Adivinando | B | Correcta, no consolidada | Ortográfica |
+| 8 | C | Seguro | C | Correcta | Ortográfica |
+| 9 | A | Duda | A | Correcta | Ortográfica |
+| 10 | A | Duda | C | Incorrecta | Ortográfica |
+
+**Corrección individual:** Q1 A es un objetivo académico formal y delimitado; B es coloquial y C anticipa resultados. Q2 B comunica ciencia a público no especializado; A acumula tecnicismos y C es coloquial. Q3 B usa «enviarlos» para retomar conjuntamente «el protocolo y la reseña»; A usa femenino plural y C singular. Q4 B concuerda «confirman» con el núcleo plural «los resultados»; la frase «junto con las observaciones» no vuelve singular al sujeto. Q5 B usa «sin embargo» para contrastar menor tiempo de carga y mayor consumo de memoria; «por consiguiente» inventaría causalidad y «asimismo» no expresa el contraste. Q6 B identifica expresamente a la investigadora como responsable; A deja ambiguo «su informe» y C mantiene pronombres ambiguos. Q7 B distingue «aun cuando» (= aunque, sin tilde) de «aún no» (= todavía no, con tilde); A y C colocan mal una de las tildes. **Acierto por adivinación, no consolidado.** Q8 C acentúa «qué» y «cómo» en interrogativas indirectas; A omite ambas tildes y B omite «cómo». Q9 A usa dos puntos para introducir la lista anunciada por «tres factores»; B los coloca después del verbo y C usa punto y coma sin corresponder a la estructura. Q10 la clave es C: «prevé» (no «prevee») y «aún no» (= todavía no). A falla en la grafía de prever; B corrige «prevé» pero omite la tilde de «aún». **Único error del bloque: grafía/conjugación de prever.**
+
+**Balance por dimensión:** comunicativa 2/2; gramatical-semántica 4/4; ortográfica 3/4. Promedio temporal: 46.2 s por reactivo. La ortografía requiere refuerzo en aun/aún, interrogativos indirectos, prever/prevé, acentuación y puntuación.
+
+---
+
+## Bloque 19 — Lenguaje y Comunicación / Redacción Indirecta / Subárea 2.2: Ámbito de participación social
+
+**Fecha:** 15-11-2026. **Resultado:** 10/10. **Tiempo:** 5:29. **Seguridad:** Seguro 8/8; Duda 1/1; Adivinando 1/1 (no consolidada).
+
+| Reactivo | Respuesta | Seguridad | Clave | Resultado | Dimensión |
+|---:|:---:|---|:---:|---|---|
+| 1 | C | Seguro | C | Correcta | Comunicativa |
+| 2 | A | Seguro | A | Correcta | Comunicativa |
+| 3 | B | Seguro | B | Correcta | Comunicativa |
+| 4 | A | Seguro | A | Correcta | Gramatical-semántica |
+| 5 | B | Duda | B | Correcta | Gramatical-semántica |
+| 6 | A | Seguro | A | Correcta | Gramatical-semántica |
+| 7 | B | Seguro | B | Correcta | Gramatical-semántica |
+| 8 | B | Adivinando | B | Correcta, no consolidada | Ortográfica |
+| 9 | C | Seguro | C | Correcta | Ortográfica |
+| 10 | A | Seguro | A | Correcta | Ortográfica |
+
+**Corrección individual:** Q1 C corresponde a una carta de exposición de motivos porque formaliza la solicitud y explica experiencia y compromiso; A es coloquial y B es una postura editorial. Q2 A es convocatoria porque indica convocante, destinatarios, periodo y requisitos; B argumenta y C expone motivos personales. Q3 B es editorial porque sostiene una postura sobre un asunto público y propone acción; A es nota informativa y C convocatoria. Q4 A usa verbo plural «fueron» y participio masculino plural «publicados» para «la convocatoria y el reglamento»; B tiene verbo singular y C participio femenino plural. Q5 B usa plural «se realizarán» para dos núcleos coordinados («la revisión» y «la publicación»); A y C usan singular. Q6 A deja claro que «este» (el comité) evaluó las solicitudes; B permite que el sujeto tácito sea la asociación y C hace que el comité evalúe a la asociación. Q7 B «asimismo» agrega una acción; A expresa contraste y C consecuencia. Q8 B acentúa «cuándo» y «quién» en interrogativas indirectas; A omite ambas tildes y C omite la de «quién». **Acierto por adivinación, no consolidado.** Q9 C introduce correctamente una enumeración con dos puntos después de «tres documentos»; A rompe la relación directa entre verbo y complemento al poner dos puntos después de «solicitó» y B usa punto y coma de forma inadecuada. Q10 A usa «sesión informativa» (reunión), no «sección» (parte de un documento); C omite la tilde de «distribución».
+
+**Balance por dimensión:** comunicativa 3/3; gramatical-semántica 4/4; ortográfica 3/3. Tiempo medio 32.9 s por reactivo. Aunque Q9 fue correcta y segura, el sustentante declaró no distinguir dos puntos de punto y coma; no se declara dominado hasta completar práctica contrastiva.
+
+---
+
+## Cierre de Lenguaje y Comunicación — bloques 15 a 19
+
+| Área / subárea | Resultado | Tiempo |
+|---|---:|---:|
+| Comprensión Lectora 1.1 Ámbito de estudio | 10/10 | 9:24 |
+| Comprensión Lectora 1.2 Ámbito literario | 10/10 | 8:13 |
+| Comprensión Lectora 1.3 Participación social | 9/9 válidos (1 anulable) | 8:42 |
+| **Comprensión Lectora** | **29/29 válidos** | **26:19** |
+| Redacción Indirecta 2.1 Ámbito de estudio | 9/10 | 7:42 |
+| Redacción Indirecta 2.2 Participación social | 10/10 | 5:29 |
+| **Redacción Indirecta** | **19/20** | **13:11** |
+| **Lenguaje y Comunicación** | **48/49 válidos** | **39:30** |
+
+Fortalezas: comprensión de textos en los tres ámbitos, identificación de géneros (editorial, convocatoria y carta de motivos), adecuación del registro, concordancia, correferencia, conectores y evaluación de evidencia. Pendientes: prever/prevé, aun/aún, interrogativos indirectos (aciertos por adivinación), puntuación, diferencia entre dos puntos y punto y coma y acentuación general.
+
+---
+
+## Diagnóstico integral acumulado — cierre de los 19 bloques
+
+| Indicador | Resultado |
+|---|---:|
+| Bloques completados | 19/19 |
+| Reactivos presentados | 190 |
+| Reactivos válidos | 189 |
+| Reactivos anulados | 1 (bloque 17, reactivo 4) |
+| Aciertos válidos | 170 |
+| Errores válidos | 19 |
+| **Precisión ajustada** | **89.95 % (170/189)** |
+| Tiempo acumulado | **156 min 17 s (2 h 36 min 17 s)** |
+| Tiempo medio por reactivo válido | 49.6 s aprox. |
+| Seguro | 105/108 correctas |
+| Duda | 38/44 correctas |
+| Adivinando | 27/37 correctas — no consolidadas |
+
+### Resultados por área
+
+| Área | Resultado |
+|---|---:|
+| Área 1 — Análisis de sistemas | 29/30 |
+| Área 2 — Diseño de sistemas | 30/30 |
+| Área 3 — Desarrollo de sistemas | 41/50 |
+| Área 4 — Gestión de proyectos | 22/30 |
+| Comprensión Lectora | 29/29 válidos |
+| Redacción Indirecta | 19/20 |
+| **Total** | **170/189 válidos** |
+
+**Pendientes transversales:** prioridad CRÍTICA bloque 10, pregunta 7, NOT IN con NULL y lógica SQL de tres valores; concurrencia SQL; PERT/CPI/SPI/BAC/EAC/TCPI/EMV/crashing; MC/DC, disponibilidad SLA y pruebas concurrentes; Kanban, Ley de Little, TDD, story points; paradigmas, polimorfismo, closures, reduce, Liskov, DIP y semántica Java/C#/JavaScript; PWA/RTOS/OTA; source maps, trazas, perfiladores y analizadores estáticos; UML, ATAM, MoSCoW, arquitectura en capas y CQRS. En Lenguaje: aun/aún, interrogativos indirectos, prever/prevé, acentuación y puntuación (dos puntos frente a punto y coma).
+
+*Práctica original, no oficial ni equivalente a ICNE. El 89.95 % no predice ni garantiza una calificación Ceneval.*
