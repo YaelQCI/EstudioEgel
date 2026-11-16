@@ -2,9 +2,25 @@
 
 Diagnóstico inicial completado. Consulta las [respuestas y explicaciones](DIAGNOSTICO_INICIAL_RESULTADOS.md): 28/30, tiempo de respuesta 21:57. Los enunciados completos del primer diagnóstico están en la conversación; el informe conserva temas, respuestas, confianza y correcciones.
 
-## Diagnóstico integral en curso
+## Diagnóstico integral — completado
 
-[Registro de las 19 subáreas — bloques 1 a 14](EGEL_ISOFT_diagnostico_integral_registro.md): **122/140 aciertos** (87.14 %), 116:47 de tiempo acumulado. Completadas las 14 subáreas disciplinares: Área 1 29/30, Área 2 30/30, Área 3 41/50 y Área 4 22/30. Próximo bloque 15: inicio de Lenguaje y Comunicación. **Repaso crítico pendiente:** bloque 10, pregunta 7 (`NOT IN` con `NULL`). Este registro es independiente del diagnóstico inicial de 30 reactivos.
+[Registro detallado de los 19 bloques](EGEL_ISOFT_diagnostico_integral_registro.md): **170/189 aciertos válidos (89.95 %)**, 190 reactivos presentados, 1 anulable (bloque 17, pregunta 4), 156:17 de tiempo. El diagnóstico original de 19 bloques está cerrado; no equivale a una calificación oficial ni a un ICNE.
+
+| Área | Resultado |
+|---|---:|
+| Área 1 — Análisis de sistemas | 29/30 |
+| Área 2 — Diseño de sistemas | 30/30 |
+| Área 3 — Desarrollo de sistemas | 41/50 |
+| Área 4 — Gestión de proyectos | 22/30 |
+| Comprensión Lectora | 29/29 válidos |
+| Redacción Indirecta | 19/20 |
+| **Total** | **170/189 válidos** |
+
+**Confianza:** Seguro 105/108; Duda 38/44; Adivinando 27/37 (los aciertos por adivinación no se consideran dominio).
+
+**Repaso crítico pendiente:** bloque 10, pregunta 7 (NOT IN con NULL), lógica de tres valores SQL (TRUE, FALSE, UNKNOWN) y comparación con NOT EXISTS. Otros pendientes: concurrencia SQL; PERT/CPI/SPI/BAC/EAC/TCPI/EMV/crashing; MC/DC, SLA y pruebas concurrentes; Kanban, Ley de Little, TDD, story points; paradigmas, polimorfismo, closures, reduce, Liskov, DIP y semántica Java/C#/JavaScript; PWA/RTOS/OTA; source maps, trazas, perfiladores, analizadores estáticos; UML, ATAM, MoSCoW, arquitectura en capas y CQRS. En lenguaje: aun/aún, interrogativos indirectos, prever/prevé, acentuación y puntuación (dos puntos frente a punto y coma).
+
+El siguiente paso es crear un plan de refuerzo basado en estos resultados y comprobar el aprendizaje con ejercicios nuevos. Los reactivos de este diagnóstico son originales de práctica, no oficiales.
 
 ## Organización
 
